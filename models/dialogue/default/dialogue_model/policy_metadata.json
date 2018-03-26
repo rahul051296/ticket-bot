@@ -8,13 +8,13 @@
     "utter_goodbye": {
       "slots": []
     },
+    "utter_thankyou": {
+      "slots": []
+    },
     "utter_ticket_details": {
       "slots": [
         "tId"
       ]
-    },
-    "utter_thankyou": {
-      "slots": []
     },
     "utter_wish": {
       "slots": []
