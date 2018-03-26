@@ -1,0 +1,21 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_ticket",
+    "intent_mood",
+    "intent_goodbye",
+    "intent_thankyou",
+    "entity_tId",
+    "slot_tId_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_wish",
+    "prev_utter_goodbye",
+    "prev_utter_ask_tid",
+    "prev_utter_help",
+    "prev_utter_on_it",
+    "prev_utter_thankyou",
+    "prev_utter_ticket_details"
+  ]
+}

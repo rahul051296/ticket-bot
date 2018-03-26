@@ -1,0 +1,502 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hai"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hello there"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "moin"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "let's go"
+      },
+      {
+        "intent": "greet",
+        "text": "hey dude"
+      },
+      {
+        "intent": "greet",
+        "text": "goodmorning"
+      },
+      {
+        "intent": "greet",
+        "text": "goodevening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "462",
+            "start": 26,
+            "end": 29
+          }
+        ],
+        "text": "what about ticket with id 462"
+      },
+      {
+        "intent": "ticket",
+        "text": "give the ticket details"
+      },
+      {
+        "intent": "ticket",
+        "text": "ticket details pls"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "327",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "text": "327"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "332",
+            "start": 39,
+            "end": 42
+          }
+        ],
+        "text": "give the details of the ticket with id 332"
+      },
+      {
+        "intent": "ticket",
+        "text": "i want to know my ticket details"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "123",
+            "start": 26,
+            "end": 29
+          }
+        ],
+        "text": "details of ticket with id 123"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "126",
+            "start": 41,
+            "end": 44
+          }
+        ],
+        "text": "get the details following ticket with id 126"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "244",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "text": "244 ticket details"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "193",
+            "start": 36,
+            "end": 39
+          }
+        ],
+        "text": "can you give some details of ticket 193"
+      },
+      {
+        "intent": "ticket",
+        "text": "pls get the details of tickets"
+      },
+      {
+        "intent": "ticket",
+        "text": "wanna some info about tickets"
+      },
+      {
+        "intent": "ticket",
+        "text": "what about my tickets"
+      },
+      {
+        "intent": "ticket",
+        "text": "tickets"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "462",
+            "start": 7,
+            "end": 10
+          }
+        ],
+        "text": "ticket 462 details"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "563",
+            "start": 11,
+            "end": 14
+          }
+        ],
+        "text": "get ticket 563 information"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "365",
+            "start": 23,
+            "end": 26
+          }
+        ],
+        "text": "i want some info about 365 ticket"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "234",
+            "start": 25,
+            "end": 28
+          },
+          {
+            "entity": "tId",
+            "value": "66",
+            "start": 33,
+            "end": 35
+          }
+        ],
+        "text": "i need status of tickets 234 and 66"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "152",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "entity": "tId",
+            "value": "521",
+            "start": 4,
+            "end": 7
+          }
+        ],
+        "text": "152,521 ticket detals"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "472",
+            "start": 26,
+            "end": 29
+          },
+          {
+            "entity": "tId",
+            "value": "941",
+            "start": 32,
+            "end": 35
+          }
+        ],
+        "text": "get the status of tikcets 472 & 941"
+      },
+      {
+        "intent": "ticket",
+        "text": "i need details of some tickets"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "123",
+            "start": 0,
+            "end": 3
+          },
+          {
+            "entity": "tId",
+            "value": "525",
+            "start": 4,
+            "end": 7
+          },
+          {
+            "entity": "tId",
+            "value": "582",
+            "start": 8,
+            "end": 11
+          },
+          {
+            "entity": "tId",
+            "value": "362",
+            "start": 12,
+            "end": 15
+          },
+          {
+            "entity": "tId",
+            "value": "835",
+            "start": 16,
+            "end": 19
+          }
+        ],
+        "text": "123 525 582 362 835"
+      },
+      {
+        "intent": "mood",
+        "text": "perfect"
+      },
+      {
+        "intent": "mood",
+        "text": "very good"
+      },
+      {
+        "intent": "mood",
+        "text": "great"
+      },
+      {
+        "intent": "mood",
+        "text": "amazing"
+      },
+      {
+        "intent": "mood",
+        "text": "feeling like a king"
+      },
+      {
+        "intent": "mood",
+        "text": "wonderful"
+      },
+      {
+        "intent": "mood",
+        "text": "I am feeling very good"
+      },
+      {
+        "intent": "mood",
+        "text": "I am great"
+      },
+      {
+        "intent": "mood",
+        "text": "I am amazing"
+      },
+      {
+        "intent": "mood",
+        "text": "I am going to save the world"
+      },
+      {
+        "intent": "mood",
+        "text": "super"
+      },
+      {
+        "intent": "mood",
+        "text": "extremely good"
+      },
+      {
+        "intent": "mood",
+        "text": "so so perfect"
+      },
+      {
+        "intent": "mood",
+        "text": "so good"
+      },
+      {
+        "intent": "mood",
+        "text": "so perfect"
+      },
+      {
+        "intent": "mood",
+        "text": "my day was horrible"
+      },
+      {
+        "intent": "mood",
+        "text": "I am sad"
+      },
+      {
+        "intent": "mood",
+        "text": "I don't feel very well"
+      },
+      {
+        "intent": "mood",
+        "text": "I am disappointed"
+      },
+      {
+        "intent": "mood",
+        "text": "super sad"
+      },
+      {
+        "intent": "mood",
+        "text": "I'm so sad"
+      },
+      {
+        "intent": "mood",
+        "text": "sad"
+      },
+      {
+        "intent": "mood",
+        "text": "very sad"
+      },
+      {
+        "intent": "mood",
+        "text": "unhappy"
+      },
+      {
+        "intent": "mood",
+        "text": "not so good"
+      },
+      {
+        "intent": "mood",
+        "text": "not very good"
+      },
+      {
+        "intent": "mood",
+        "text": "extremly sad"
+      },
+      {
+        "intent": "mood",
+        "text": "so saad"
+      },
+      {
+        "intent": "mood",
+        "text": "so sad"
+      },
+      {
+        "intent": "goodbye",
+        "text": "cu"
+      },
+      {
+        "intent": "goodbye",
+        "text": "good by"
+      },
+      {
+        "intent": "goodbye",
+        "text": "cee you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "good night"
+      },
+      {
+        "intent": "goodbye",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you around"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "c u"
+      },
+      {
+        "intent": "goodbye",
+        "text": "farewell"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thank you"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thank you very much"
+      },
+      {
+        "intent": "thankyou",
+        "text": "nice"
+      },
+      {
+        "intent": "thankyou",
+        "text": "tqsm"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks you so much"
+      },
+      {
+        "intent": "thankyou",
+        "text": "ok thanks"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

@@ -1,0 +1,64 @@
+slots:
+  tId:
+    type: list
+
+
+intents:
+ - greet
+ - ticket
+ - mood
+ - goodbye
+ - thankyou
+
+entities:
+ - tId
+
+templates:
+  utter_greet:
+    - 'Hello!'
+    - 'Hiii'
+    - 'Hey'
+    - 'Hai'
+  utter_wish:
+    - 'How are you?'
+    - 'Hope you are doing well :)'
+  utter_help:
+    - 'May I help you?'
+    - 'Do you need any assistance?'
+    - 'How can I help you?'
+    - 'I am at your assistance'
+    - 'Need any help?'
+    - 'Is everything fine?'
+  utter_ask_tid:
+    - 'Ticket id please'
+    - 'Would you mind telling the ticket id'
+    - 'Providing ticket id will make my job easy'
+    - 'Please provide the ticket id'
+    - 'Enter the id of the ticket'
+    - 'Sure please tell the ticket id'
+    - 'What is the ticket id?'
+  utter_get_result:
+    - 'Details of ticket {tId} are as follows'
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye bye'
+    - 'Enjoy the day'
+    - 'See you around'
+    - 'See you later'
+    - 'Good bye'
+    - 'Have a nice day'
+  utter_thankyou:
+    - 'You are welcome'
+    - ':)'
+  utter_on_it: 
+    - "I'm on it"
+
+actions:
+ - utter_greet
+ - utter_wish
+ - utter_goodbye
+ - utter_ask_tid
+ - utter_help
+ - utter_on_it
+ - utter_thankyou
+ - actions.GetTicketDetails
