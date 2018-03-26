@@ -80,6 +80,7 @@
 - have a nice day
 - see you around
 - bye bye
+- goodbye man
 - see you later
 - c u
 - farewell
