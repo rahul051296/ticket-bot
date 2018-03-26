@@ -137,3 +137,22 @@
     - slot{"tId": "66"}
 * goodbye
     - export
+
+## Generated Story 5887956512423362533
+* ticket
+    - utter_ask_tid
+* ticket{"tId": "234"}
+    - slot{"tId": "234"}
+    - utter_on_it
+    - utter_ticket_details
+    - slot{"tId": "234"}
+* ticket{"tId": "66"}
+    - slot{"tId": "66"}
+    - utter_on_it
+    - utter_ticket_details
+    - slot{"tId": "66"}
+* ticket
+    - utter_on_it
+    - utter_ticket_details
+    - slot{"tId": "66"}
+    - export

@@ -15,6 +15,8 @@
 - good afternoon
 
 ## intent:ticket
+- ticket status
+- details of tickets
 - what about ticket with id [462](tId)
 - give the ticket details
 - ticket details pls
