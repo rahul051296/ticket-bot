@@ -493,6 +493,10 @@
       },
       {
         "intent": "goodbye",
+        "text": "goodbye man"
+      },
+      {
+        "intent": "goodbye",
         "text": "see you later"
       },
       {
