@@ -1,0 +1,30 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "tId"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "utter_thankyou": {
+      "slots": []
+    },
+    "utter_ticket_details": {
+      "slots": [
+        "tId"
+      ]
+    },
+    "utter_wish": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.8.5",
+  "max_history": 3,
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ]
+}

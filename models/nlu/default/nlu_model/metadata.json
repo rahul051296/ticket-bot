@@ -47,6 +47,10 @@
     },
     "entity_synonyms": null,
     "intent_classifier_sklearn": "intent_classifier.pkl",
+<<<<<<< HEAD
     "trained_at": "20180326-154540",
+=======
+    "trained_at": "20180326-153335",
+>>>>>>> ae09b7b25bda45917656a703cf18113e541e0a97
     "rasa_nlu_version": "0.11.4"
 }
