@@ -9,6 +9,11 @@ intents:
  - mood
  - goodbye
  - thankyou
+ - formality
+ - personal
+ - what_doing
+ - alright
+ - what_can_do
 
 entities:
  - tId
@@ -19,9 +24,11 @@ templates:
     - 'Hiii'
     - 'Hey'
     - 'Hai'
+  
   utter_wish:
     - 'How are you?'
     - 'Hope you are doing well :)'
+  
   utter_help:
     - 'May I help you?'
     - 'Do you need any assistance?'
@@ -29,6 +36,7 @@ templates:
     - 'I am at your assistance'
     - 'Need any help?'
     - 'Is everything fine?'
+  
   utter_ask_tid:
     - 'Ticket id please'
     - 'Would you mind telling the ticket id'
@@ -37,8 +45,7 @@ templates:
     - 'Enter the id of the ticket'
     - 'Sure please tell the ticket id'
     - 'What is the ticket id?'
-  utter_get_result:
-    - 'Details of ticket {tId} are as follows'
+  
   utter_goodbye:
     - 'Talk to you later.'
     - 'Bye bye'
@@ -47,11 +54,34 @@ templates:
     - 'See you later'
     - 'Good bye'
     - 'Have a nice day'
+  
   utter_thankyou:
     - 'You are welcome'
     - ':)'
+    
   utter_on_it: 
     - "I'm on it"
+    
+  utter_what_doing:
+    - "Nothing much, mostly just work.."
+    - "Just the usual routine.."
+    - "Doing my job as usual.."
+    
+  utter_personal:
+    - "I'm an AI Chatbot. I can guide you around the hub if you need any help. :)"
+    - "I'm an AI Chatbot here to serve you. :)"
+  
+  utter_alright:
+    - "I'm glad to hear that :)"
+    - "Cheers!"
+    - "Great!"
+    
+  utter_what_can_do:
+    - "I can guide you around this site."
+    
+  utter_formality:
+    - "Good good. Hope you're doing well too."
+    - "Yeah, everything is going well. Hope you're doing fine aswell"
 
 actions:
  - utter_greet
@@ -61,4 +91,9 @@ actions:
  - utter_help
  - utter_on_it
  - utter_thankyou
+ - utter_personal
+ - utter_alright
+ - utter_what_doing
+ - utter_what_can_do
+ - utter_formality
  - actions.GetTicketDetails

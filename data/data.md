@@ -43,6 +43,44 @@
 - i need details of some tickets
 - [123](tId) [525](tId) [582](tId) [362](tId) [835](tId)
 
+## intent:formality
+- How are you?
+- How you doing?
+- How's you?
+- How are you man?
+- How's life?
+- How's everything going?
+
+## intent:personal
+- Who are you?
+- What are you?
+- What is your name?
+- Your name?
+- May i know who you are?
+
+## intent:what_doing
+- What are you doing?
+- What's up?
+- Sup?
+- What doing man?
+- What's going on?
+- What are you upto?
+
+## intent:alright
+- You are
+- yes
+- thank you
+- you are helpful
+- You're awesome
+- amazing
+
+## intent:what_can_do
+- What can you do?
+- What you do?
+- What is your job
+- You can do what?
+- What is your purpose?
+
 ## intent:mood
 - perfect
 - very good
