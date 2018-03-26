@@ -159,6 +159,42 @@
       },
       {
         "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "362",
+            "start": 6,
+            "end": 9
+          }
+        ],
+        "text": "id is 362"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "298",
+            "start": 0,
+            "end": 3
+          }
+        ],
+        "text": "298 is my ticket id"
+      },
+      {
+        "intent": "ticket",
+        "entities": [
+          {
+            "entity": "tId",
+            "value": "563",
+            "start": 19,
+            "end": 22
+          }
+        ],
+        "text": "ok then what about 563"
+      },
+      {
+        "intent": "ticket",
         "text": "wanna some info about tickets"
       },
       {
@@ -458,10 +494,6 @@
       {
         "intent": "goodbye",
         "text": "see you later"
-      },
-      {
-        "intent": "goodbye",
-        "text": "c u"
       },
       {
         "intent": "goodbye",

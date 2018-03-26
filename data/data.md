@@ -26,6 +26,9 @@
 - [244](tId) ticket details
 - can you give some details of ticket [193](tId)
 - pls get the details of tickets
+- id is [362](tId)
+- [298](tId) is my ticket id
+- ok then what about [563](tId)
 - wanna some info about tickets
 - what about my tickets
 - tickets
@@ -81,7 +84,6 @@
 - see you around
 - bye bye
 - see you later
-- c u
 - farewell
 
 ## intent:thankyou
