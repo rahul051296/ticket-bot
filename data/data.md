@@ -43,6 +43,13 @@
 - i need details of some tickets
 - [123](tId) [525](tId) [582](tId) [362](tId) [835](tId)
 
+## intent:customer_details
+- Get me the customer details of id [be6746mar23](userId)
+- Get me the customer details for id [a451de123ea](userId)
+- I want the details of customer with id [be6746mar23](userId)
+- I want details for customer id [ae1246feb23](userId)
+- Give me the customer details of [ac8746f2323](userId)
+
 ## intent:formality
 - How are you?
 - How you doing?

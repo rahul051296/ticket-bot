@@ -1,4 +1,6 @@
 __pycache__
+.idea
 tickets.json
+orders.json
 models/
 stories.md

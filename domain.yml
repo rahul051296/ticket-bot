@@ -1,6 +1,8 @@
 slots:
   tId:
     type: list
+  userId:
+    type: text
 
 
 intents:
@@ -15,9 +17,11 @@ intents:
  - alright
  - what_can_do
  - out_of_scope
-
+ - customer_details
+ 
 entities:
  - tId
+ - userId
 
 templates:
   utter_greet:
@@ -99,3 +103,4 @@ actions:
  - utter_formality
  - actions.ActionFallback
  - actions.GetTicketDetails
+ - actions.GetCustomerDetails

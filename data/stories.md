@@ -9,6 +9,11 @@
     - utter_goodbye
     - export
 
+## Generated Story 3834930610052290095
+* customer_details{"userId": "200"}
+    - utter_customer_details
+    - export
+
 ## Generated Story -4743213857576957234
 * greet
     - utter_greet
@@ -245,10 +250,58 @@
 * goodbye
     - utter_goodbye
     - export
+
     
 ## Generated Story 1202144892448485348
 * greet
     - utter_greet
 * out_of_scope
     - fallback
+
+## Generated Story 4618288701478642746
+* greet
+    - utter_greet
+    - utter_wish
+* mood
+    - utter_help
+* ticket{"tId": "66"}
+    - slot{"tId": "66"}
+    - utter_on_it
+    - utter_ticket_details
+    - slot{"tId": "66"}
+* customer_details{"userId":"200"}
+    - utter_customer_details
+    - slot{"userId": "200"}
     - export
+## Generated Story 2366937963736916246
+* greet
+    - utter_greet
+* ticket{"tId": "66"}
+    - slot{"tId": "66"}
+    - utter_on_it
+    - utter_ticket_details
+    - slot{"tId": "66"}
+* customer_details{"userId": "100"}
+    - slot{"userId": "100"}
+    - utter_customer_details
+    - slot{"userId": "100"}
+* thankyou
+    - utter_thankyou
+* goodbye
+    - utter_goodbye
+    - export
+## Generated Story -2555464598702096761
+* greet
+    - utter_greet
+* ticket{"tId": "234"}
+    - slot{"tId": "234"}
+    - utter_on_it
+    - utter_ticket_details
+    - slot{"tId": "234"}
+* customer_details{"userId": "ae1246feb23"}
+    - slot{"userId": "ae1246feb23"}
+    - utter_customer_details
+    - slot{"userId": "ae1246feb23"}
+* goodbye
+    - utter_goodbye
+
