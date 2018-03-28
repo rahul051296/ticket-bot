@@ -33,9 +33,8 @@ function respond(msg) {
 			console.log(data);
 			if(data[0]){
 				let li = document.createElement('li');
-				let t = document.createTextNode(data);
+				li.innerHTML = data;
 				li.className = 'responder';
-				li.appendChild(t)
 				ul.appendChild(li)
 				element.scrollTop = element.scrollHeight;
 			}

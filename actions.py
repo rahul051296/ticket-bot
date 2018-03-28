@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 
-from details import getPhone, getTicketStatus
+from details import getTicketStatus, getCustomerDetails
 
 
 class GetResult(Action):
@@ -26,20 +26,20 @@ class GetResult(Action):
         return [SlotSet('Priority', tracker.get_slot('Priority'))]
 
 
-class GetCustomerPhone(Action):
+class GetCustomerDetails(Action):
     def name(self):
-        return 'utter_phone'
+        return 'utter_customer_details'
 
     def run(self, dispatcher, tracker, domain):
         message = "No user found"
-        user = str(tracker.get_slot('User'))
-        response = getPhone(user)
+        user = str(tracker.get_slot('userId'))
+        response = getCustomerDetails(user)
         if response:
             message = response
             dispatcher.utter_message(message)
         else:
             dispatcher.utter_message(message)
-        return [SlotSet('User', tracker.get_slot('User'))]
+        return [SlotSet('userId', tracker.get_slot('userId'))]
 
 
 class GetTicketDetails(Action):
