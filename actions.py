@@ -10,7 +10,7 @@ from details import getPhone, getTicketStatus
 
 class GetResult(Action):
     def name(self):
-       return 'get_result'
+        return 'get_result'
 
     def run(self, dispatcher, tracker, domain):
         p = str(tracker.get_slot('Priority'))
@@ -52,3 +52,14 @@ class GetTicketDetails(Action):
         dispatcher.utter_message(message)
         return [SlotSet('tId', tracker.get_slot('tId'))]
 
+
+class ActionFallback(Action):
+
+    def name(self):
+        return "fallback"
+
+    def run(self, dispatcher, tracker, domain):
+        from rasa_core.events import UserUtteranceReverted
+
+        return dispatcher.utter_message("Sorry, didn't get that. Try again.")
+       # return [UserUtteranceReverted()]

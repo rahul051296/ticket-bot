@@ -55,7 +55,7 @@
 - Who are you?
 - What are you?
 - What is your name?
-- Your name?
+- Your name pls?
 - May i know who you are?
 
 ## intent:what_doing
@@ -135,3 +135,8 @@
 - tqsm
 - thanks you so much
 - ok thanks
+
+## intent:out_of_scope
+
+## regex:tId
+- /^[1-9]{3}$/

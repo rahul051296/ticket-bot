@@ -14,6 +14,7 @@ intents:
  - what_doing
  - alright
  - what_can_do
+ - out_of_scope
 
 entities:
  - tId
@@ -96,4 +97,5 @@ actions:
  - utter_what_doing
  - utter_what_can_do
  - utter_formality
+ - actions.ActionFallback
  - actions.GetTicketDetails
