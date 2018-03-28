@@ -14,6 +14,21 @@
 - goodevening
 - good afternoon
 
+## intent:order_details
+- what about order with id [42](orderId)
+- give the details of the order with id [332](orderId)  
+- details of order with id [13](orderId)
+- get the details following order with id [126](orderId)
+- [24](orderId) order details
+- can you give some details of order [34](orderId)
+- pls get the details of tickets
+- order id is [36](orderId)
+- [298](orderId) is my orderId id
+- ok then what about [56](orderId)
+- order [462](orderId) details
+- get order [563](orderId) information
+- i want some info about [36](orderId) order
+
 ## intent:ticket
 - ticket status
 - details of tickets
@@ -42,6 +57,7 @@
 - get the status of tikcets [472](tId) & [941](tId)
 - i need details of some tickets
 - [123](tId) [525](tId) [582](tId) [362](tId) [835](tId)
+
 
 ## intent:customer_details
 - Get me the customer details of id [be6746mar23](userId)
@@ -143,7 +159,19 @@
 - thanks you so much
 - ok thanks
 
-## intent:out_of_scope
+## intent:random_query
+- [What is the time right now?](query)
+- [Where can i find chinese food](query)
+- [I want to talk to my friend](query)
+- [Very sunny outside](query)
+- [Movies that are playing in Chennai](query)
+- [Data is everywhere](query)
+- [What other chatbots are available in the market](query)
+- [Opposite of good](query)
+- [Sometimes it is good to know about the environment](query)
+- [I need to buy a phone](query)
+- [gvajyhgabskjh](query)
+- [iuhgqui qwygqiuy](query)
 
 ## regex:tId
 - /^[1-9]{3}$/

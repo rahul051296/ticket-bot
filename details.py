@@ -1,5 +1,4 @@
 import json
-from pprint import pprint
 
 
 def getTicketStatus(ticketId):
@@ -12,10 +11,10 @@ def getTicketStatus(ticketId):
             if t.get('id') == ticketId:
                 priorityName = t.get('priorityName')
                 customerName = t.get('customerName')
-                customerId = t.get('customerId');
+                customerId = t.get('customerId')
                 assignedTo = t.get('assignedTo')
                 status = t.get('status')
-                response = '<br>These are the ticket details <br> <b>Customer Name:</b> {} <br><b>Customer Id:</b> {} <br><b>Priority:</b> {}<br><b> Assigned To:</b> {}<br><b> Status:</b> {}'.format(customerName, customerId, priorityName, assignedTo, status)
+                response = 'These are the ticket details <br> <b>Customer Name:</b> {} <br><b>Customer Id:</b> {} <br><b>Priority:</b> {}<br><b> Assigned To:</b> {}<br><b> Status:</b> {}'.format(customerName, customerId, priorityName, assignedTo, status)
                 break
             else:
                 response = 'Not Found'
@@ -37,17 +36,25 @@ def getCustomerDetails(userId):
     return response
 
 
-def getOrderDetails():
+def getOrderDetails(orderId):
     with open('orders.json') as json_data:
         res = json.load(json_data)
         data = res.get('data')
         partner_order_details = data.get('partner_order_details')
         orderDetail = partner_order_details[0].get('orderDetail')
-        result = "The customer has ordered the following"
-        for od in orderDetail:
-            result += " \n " + od.get('name') + ": " + str(od.get('quantity'))
-        print(result)
+        if orderId == partner_order_details[0].get('orderId'):
+            result = "The customer has ordered the following"
+            for od in orderDetail:
+                result += " <br>\n <b>" + od.get('name') + ":</b> " + str(od.get('quantity'))
+        else:
+            result = "The order id does not exist."
+        return result
+
+
+def getGoogleResult(query):
+    result = "I was not able to understand your question.. <br>This is what i found on the web for <i>'{}'</i> <br> <a href='https://www.google.co.in/search?q={}'>Click Here</a>".format(query,query)
+    return result
 
 
 if __name__ == '__main__':
-    print(getOrderDetails())
+    print(getOrderDetails(14))

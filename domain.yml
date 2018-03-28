@@ -3,6 +3,10 @@ slots:
     type: list
   userId:
     type: text
+  orderId:
+    type: text
+  query:
+    type: text
 
 
 intents:
@@ -18,10 +22,14 @@ intents:
  - what_can_do
  - out_of_scope
  - customer_details
- 
+ - order_details
+ - random_query
+
 entities:
  - tId
  - userId
+ - orderId
+ - query
 
 templates:
   utter_greet:
@@ -101,6 +109,7 @@ actions:
  - utter_what_doing
  - utter_what_can_do
  - utter_formality
- - actions.ActionFallback
  - actions.GetTicketDetails
  - actions.GetCustomerDetails
+ - actions.GetOrderDetails
+ - actions.GetRandomQuery
