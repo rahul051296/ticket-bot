@@ -72,16 +72,13 @@ templates:
     - 'You are welcome'
     - ':)'
     
-  utter_on_it: 
-    - "I'm on it"
-    
   utter_what_doing:
     - "Nothing much, mostly just work.."
     - "Just the usual routine.."
     - "Doing my job as usual.."
     
   utter_personal:
-    - "I'm an AI Chatbot. I can guide you around the hub if you need any help. :)"
+    - "I'm an AI Chatbot. I can guide you around the site if you need any help. :)"
     - "I'm an AI Chatbot here to serve you. :)"
   
   utter_alright:
@@ -102,7 +99,6 @@ actions:
  - utter_goodbye
  - utter_ask_tid
  - utter_help
- - utter_on_it
  - utter_thankyou
  - utter_personal
  - utter_alright
