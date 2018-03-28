@@ -31,8 +31,13 @@ class TicketBot(HttpInputComponent):
         @app.route("/respond", methods=['GET', 'POST'])
         @cross_origin()
         def receive():
-            query = request.args.get('q')
-            sender_id = request.args.get('id')
+            if request.method == 'POST':
+                data = request.get_json()
+                query = data['query']
+                sender_id = data['id']
+            elif request.method == 'GET':
+                query = request.args.get('q')
+                sender_id = request.args.get('id')
             out = CollectingOutputChannel()
             on_new_message(UserMessage(query, out, sender_id))
             responses = [m for _, m in out.messages]
