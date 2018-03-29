@@ -3,6 +3,8 @@ slots:
     type: list
   userId:
     type: text
+  oId:
+    type: text
 
 
 intents:
@@ -17,6 +19,7 @@ intents:
  - alright
  - what_can_do
  - out_of_scope
+ - order_details
  - customer_details
  
 entities:
@@ -87,6 +90,16 @@ templates:
   utter_formality:
     - "Good good. Hope you're doing well too."
     - "Yeah, everything is going well. Hope you're doing fine aswell"
+  utter_order_details:
+    - "{oId} is the order id"
+  utter_ask_oid:
+    - 'Order id please'
+    - 'Would you mind telling the order id'
+    - 'Providing order id will make my job easy'
+    - 'Please provide the order id'
+    - 'Enter the id of the order'
+    - 'Sure please tell the order id'
+    - 'What is the order id?'
 
 actions:
  - utter_greet
@@ -101,6 +114,8 @@ actions:
  - utter_what_doing
  - utter_what_can_do
  - utter_formality
+ - utter_ask_oid
+ - utter_order_details
  - actions.ActionFallback
  - actions.GetTicketDetails
  - actions.GetCustomerDetails

@@ -14,6 +14,31 @@
 - goodevening
 - good afternoon
 
+## intent:order_details
+- order details
+- details of my order
+- what about order with id [843](oId)
+- give the order details
+- order details pls
+- [832](oId)
+- give the details of the order with id [483](oId)  
+- i want to know my order details
+- details of order with id [905](oId)
+- get the details following order with id [735](oId)
+- [984](oId) order details
+- can you give some details of order [429](oId)
+- pls get the details of order
+- id is [985](oId)
+- [913](oId) is my order id
+- ok then what about [563](oId)
+- wanna some info about my orders
+- what about my orders
+- orders
+- order [183](oId) details
+- get order [127](oId) information
+- i want some info about [347](oId) order
+- i need details of my order
+
 ## intent:ticket
 - ticket status
 - details of tickets

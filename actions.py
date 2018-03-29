@@ -61,5 +61,5 @@ class ActionFallback(Action):
     def run(self, dispatcher, tracker, domain):
         from rasa_core.events import UserUtteranceReverted
 
-        return dispatcher.utter_message("Sorry, didn't get that. Try again.")
-       # return [UserUtteranceReverted()]
+        dispatcher.utter_message("Sorry, didn't get that. Try again.")
+        return [UserUtteranceReverted()]

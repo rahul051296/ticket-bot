@@ -290,6 +290,7 @@
 * goodbye
     - utter_goodbye
     - export
+    
 ## Generated Story -2555464598702096761
 * greet
     - utter_greet
@@ -304,4 +305,19 @@
     - slot{"userId": "ae1246feb23"}
 * goodbye
     - utter_goodbye
-
+    
+## Generated Story 74
+* greet
+    - utter_greet
+* order_details
+    - utter_ask_oid
+* order_details{"oId": "424"}
+    - slot{"oId": "234"}
+    - utter_on_it
+    - utter_order_details
+* ticket
+    - utter_ask_tid
+* ticket{"tId": "234"}
+    - slot{"tId": "234"}
+    - utter_on_it
+    - utter_ticket_details
