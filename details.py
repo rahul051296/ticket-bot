@@ -8,7 +8,7 @@ def getTicketStatus(ticketId):
         res = data.get('data')
         tickets = res.get('tickets')
         for t in tickets:
-            if t.get('id') == ticketId:
+            if t.get('id') == int(ticketId):
                 priorityName = t.get('priorityName')
                 customerName = t.get('customerName')
                 customerId = t.get('customerId')
@@ -42,7 +42,7 @@ def getOrderDetails(orderId):
         data = res.get('data')
         partner_order_details = data.get('partner_order_details')
         orderDetail = partner_order_details[0].get('orderDetail')
-        if orderId == partner_order_details[0].get('orderId'):
+        if int(orderId) == partner_order_details[0].get('orderId'):
             result = "The customer has ordered the following"
             for od in orderDetail:
                 result += " <br>\n <b>" + od.get('name') + ":</b> " + str(od.get('quantity'))

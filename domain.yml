@@ -53,9 +53,7 @@ templates:
     
   utter_help:
     - 'How can I help you?'
-    - 'I am at your assistance'
-    - 'Need any help?'
-    - 'Is everything fine?'
+    - 'Do you need my help?'
     
   utter_inform:
     - "Sure! What kind of information do you need?"
