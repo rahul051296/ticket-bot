@@ -16,19 +16,16 @@
     - utter_ask_tid
 *ticket[tId=234]
     - slot{"tId":"234"}
-    - utter_on_it
     - utter_ticket_details
 *order_details
-    - utter_ask_oId
-*order_details[oId=14]
-    - slot{"oId":"14"}
-    - utter_on_it
+    -  utter_ask_orderId
+*order_details[orderId=14]
+    - slot{"orderId":"14"}
     - utter_order_details
 *customer_details
     - utter_ask_userId
 *customer_details[userId=ae1246feb23]
     - slot{"userId":"ae1246feb23"}
-    - utter_on_it
     - utter_customer_details
 * goodbye
     - utter_goodbye
@@ -52,38 +49,44 @@
     - utter_ask_tid
 *ticket[tId=234]
     - slot{"tId":"234"}
-    - utter_on_it
     - utter_ticket_details
 *order_details
-    - utter_ask_oId
-*order_details[oId=14]
-    - slot{"oId":"14"}
-    - utter_on_it
+    -  utter_ask_orderId
+*order_details[orderId=14]
+    - slot{"orderId":"14"}
     - utter_order_details
 *customer_details
     - utter_ask_userId
 *customer_details[userId=ae1246feb23]
     - slot{"userId":"ae1246feb23"}
-    - utter_on_it
     - utter_customer_details
 
 ## story 02
 *ticket[tId=234]
     - slot{"tId":"234"}
-    - utter_on_it
     - utter_ticket_details
-*order_details[oId=14]
-    - slot{"oId":"14"}
-    - utter_on_it
+*order_details[orderId=14]
+    - slot{"orderId":"14"}
     - utter_order_details
 *customer_details[userId=ae1246feb23]
     - slot{"userId":"ae1246feb23"}
-    - utter_on_it
     - utter_customer_details
     
 ## Generated Story 3834930610052290095
 * customer_details{"userId": "200"}
     - utter_customer_details
+    - export
+
+## Generated Story 3834930610052290098
+* order_details{"orderId": "14"}
+    - slot{"orderId": "14"}
+    - utter_order_details
+    - export
+
+## Generated Story 3834930610052290091
+* google_search{"query": "weather in London?"}
+    - slot{"query": "weather in London?"}
+    - utter_google_search
     - export
 
 ## Generated Story -4743213857576957234
@@ -109,7 +112,6 @@
     - utter_help
 * ticket{"tId": "546"}
     - slot{"tId": "546"}
-    - utter_on_it
     - utter_ticket_details
 * thankyou
     - utter_thankyou
@@ -119,7 +121,6 @@
     - utter_ask_tid
 * ticket{"tId": "312"}
     - slot{"tId": "312"}
-    - utter_on_it
     - utter_ticket_details
 * thankyou
     - utter_thankyou
@@ -128,7 +129,6 @@
 ## Generated Story 8913635107040950233
 * ticket{"tId": "367"}
     - slot{"tId": "367"}
-    - utter_on_it
     - utter_ticket_details
 * thankyou
     - utter_thankyou
@@ -144,7 +144,6 @@
     - utter_ask_tid
 * ticket{"tId": "123"}
     - slot{"tId": "123"}
-    - utter_on_it
     - utter_ticket_details
 * thankyou
     - utter_thankyou
@@ -155,14 +154,12 @@
 ## Generated Story -8791809428020541255
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "234"}
 * thankyou
     - utter_thankyou
 * ticket{"tId": "66"}
     - slot{"tId": "66"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
 * thankyou
@@ -174,12 +171,10 @@
 ## Generated Story -8373259511433501417
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "234"}
 * ticket{"tId": "66"}
     - slot{"tId": "66"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
 * goodbye
@@ -189,12 +184,10 @@
 ## Generated Story 5069693612114281825
 * ticket{"tId": "66"}
     - slot{"tId": "66"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "234"}
 * thankyou
@@ -204,12 +197,10 @@
 ## Generated Story 1937025311043163593
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "234"}
 * ticket{"tId": "66"}
     - slot{"tId": "66"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
 * goodbye
@@ -220,16 +211,13 @@
     - utter_ask_tid
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "234"}
 * ticket{"tId": "66"}
     - slot{"tId": "66"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
 * ticket
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
     - export
@@ -314,7 +302,6 @@
     - utter_ask_tid
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "234"}
 * thankyou
@@ -331,7 +318,6 @@
     - utter_help
 * ticket{"tId": "66"}
     - slot{"tId": "66"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
 * customer_details{"userId":"200"}
@@ -343,7 +329,6 @@
     - utter_greet
 * ticket{"tId": "66"}
     - slot{"tId": "66"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "66"}
 * customer_details{"userId": "100"}
@@ -361,7 +346,6 @@
     - utter_greet
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
     - slot{"tId": "234"}
 * customer_details{"userId": "ae1246feb23"}
@@ -375,14 +359,38 @@
 * greet
     - utter_greet
 * order_details
-    - utter_ask_oid
-* order_details{"oId": "424"}
-    - slot{"oId": "234"}
-    - utter_on_it
+    -  utter_ask_orderId
+* order_details{"orderId": "424"}
+    - slot{"orderId": "234"}
+    
     - utter_order_details
+
+## Generated Story 8503053808274981170
+* google_search{"query": "value of pi?"}
+    - slot{"query": "value of pi?"}
+    - utter_google_search
+    - slot{"query": null}
+    - export
+## Generated Story 1017332252840745558
+* greet
+    - utter_greet
+    - utter_wish
+* mood
+    - utter_help
+* formality
+    - utter_formality
+* formality
+    - utter_formality
+    - export
+## Generated Story -2139009536882699728
+* greet
+    - utter_greet
+    - utter_wish
 * ticket
     - utter_ask_tid
 * ticket{"tId": "234"}
     - slot{"tId": "234"}
-    - utter_on_it
     - utter_ticket_details
+    - utter_ticket_details
+    - slot{"tId": null}
+    - export

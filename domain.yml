@@ -3,7 +3,9 @@ slots:
     type: text
   userId:
     type: text
-  oId:
+  orderId:
+    type: text
+  query:
     type: text
 
 
@@ -21,12 +23,15 @@ intents:
  - out_of_scope
  - order_details
  - customer_details
- 
+ - order_details
+ - google_search
+
 entities:
  - tId
  - userId
- - oId
- 
+ - orderId
+ - query
+
 templates:
   utter_greet:
     - 'Hello!'
@@ -50,8 +55,6 @@ templates:
     - "I can guide you around this site."
     
   utter_help:
-    - 'May I help you?'
-    - 'Do you need any assistance?'
     - 'How can I help you?'
     - 'I am at your assistance'
     - 'Need any help?'
@@ -60,6 +63,9 @@ templates:
   utter_inform:
     - "Sure! What kind of information do you need?"
     - "Do you need Ticket details or Customer details or Order details?"
+    - 'Do you need my assistance?'
+    - 'I am at your assistance, if you need me'
+    - 'Do need any help?'
   
   utter_ask_tid:
     - 'Ticket id please'
@@ -70,7 +76,7 @@ templates:
     - 'Sure please tell the ticket id'
     - 'What is the ticket id?'
     
-  utter_ask_oid:
+  utter_ask_orderId:
     - 'Order id please'
     - 'Would you mind telling the order id'
     - 'Providing order id will make my job easy'
@@ -104,11 +110,23 @@ templates:
     - "Doing my job as usual.."
         
   utter_order_details:
-    - "{oId} is the order id"
+    - "{orderId} is the order id"
     
   utter_anything_else:
     - "Need anthing else?"
     - "If you need anything i'm happy to help"
+
+  utter_personal:
+    - "I'm an AI Chatbot. I can guide you around the site if you need any help. :)"
+    - "I'm an AI Chatbot here to serve you. :)"
+  
+  utter_alright:
+    - "I'm glad to hear that :)"
+    - "Cheers!"
+    - "Great!"
+    
+  utter_what_can_do:
+    - "I can guide you around this site."
     
   utter_goodbye:
     - 'Talk to you later.'
@@ -127,13 +145,14 @@ actions:
  - utter_goodbye
  - utter_ask_tid
  - utter_help
- - utter_on_it
  - utter_thankyou
  - utter_personal
  - utter_what_doing
  - utter_what_can_do
  - utter_formality
- - utter_ask_oid
+ - utter_ask_orderId
  - utter_order_details
  - actions.GetTicketDetails
  - actions.GetCustomerDetails
+ - actions.GetOrderDetails
+ - actions.GetGoogleSearch

@@ -5,25 +5,7 @@ from __future__ import unicode_literals
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 
-from details import getTicketStatus, getCustomerDetails
-
-
-class GetResult(Action):
-    def name(self):
-        return 'get_result'
-
-    def run(self, dispatcher, tracker, domain):
-        p = str(tracker.get_slot('Priority'))
-        if p == "p1":
-            response = "P1 ticket is resolved"
-        elif p == "p2":
-            response = "P2 ticket is unresolved"
-        elif p == "p3":
-            response = "P3 ticket is being checked"
-        else:
-            response = "The ticket does not exist"
-        dispatcher.utter_message(response)
-        return [SlotSet('Priority', tracker.get_slot('Priority'))]
+from details import getTicketStatus, getCustomerDetails, getOrderDetails, getGoogleResult
 
 
 class GetCustomerDetails(Action):
@@ -50,4 +32,29 @@ class GetTicketDetails(Action):
         ticketId = int(tracker.get_slot('tId'))
         message = getTicketStatus(ticketId)
         dispatcher.utter_message(message)
-        return [SlotSet('tId', tracker.get_slot('tId'))]
+        return [SlotSet('tId', None)]
+
+
+class GetOrderDetails(Action):
+    def name(self):
+        return 'utter_order_details'
+
+    def run(self, dispatcher, tracker, domain):
+        orderId = int(tracker.get_slot('orderId'))
+        message = getOrderDetails(orderId)
+        dispatcher.utter_message(message)
+        return [SlotSet('orderId', None)]
+
+
+class GetGoogleSearch(Action):
+    def name(self):
+        return 'utter_google_search'
+
+    def run(self, dispatcher, tracker, domain):
+        query = str(tracker.get_slot('query'))
+        if query == "None":
+            dispatcher.utter_message("I don't understand the question.")
+        else:
+            message = getGoogleResult(query)
+            dispatcher.utter_message(message)
+        return [SlotSet('query', None)]

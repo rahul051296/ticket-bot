@@ -15,16 +15,15 @@ function send() {
 
 function respond(msg) {
 	data = {
-		mess: "Hello"
+		query: msg,
+		id: id
 	}
-	fetch(`http://localhost:5004/respond?q=${msg}&id=${id}`, {
+	fetch(`http://localhost:5004/respond`, {
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json'
 			},
-			body: {
-				Test: "Hello"
-			}
+			body: JSON.stringify(data)
 		})
 		.then(function (response) {
 			return response.json();
