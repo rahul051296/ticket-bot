@@ -29,7 +29,9 @@ class GetTicketDetails(Action):
         return 'utter_ticket_details'
 
     def run(self, dispatcher, tracker, domain):
-        ticketId = int(tracker.get_slot('tId'))
+        ticketId = str(tracker.get_slot('tId'))
+        if ticketId == 'None':
+            ticketId = str(tracker.get_slot('orderId'))
         message = getTicketStatus(ticketId)
         dispatcher.utter_message(message)
         return [SlotSet('tId', None)]
@@ -40,18 +42,23 @@ class GetOrderDetails(Action):
         return 'utter_order_details'
 
     def run(self, dispatcher, tracker, domain):
-        orderId = int(tracker.get_slot('orderId'))
+        orderId = str(tracker.get_slot('orderId'))
+        if orderId == 'None':
+            orderId = str(tracker.get_slot('tId'))
         message = getOrderDetails(orderId)
         dispatcher.utter_message(message)
         return [SlotSet('orderId', None)]
 
 
-class GetRandomQuery(Action):
+class GetGoogleSearch(Action):
     def name(self):
-        return 'utter_random_query'
+        return 'utter_google_search'
 
     def run(self, dispatcher, tracker, domain):
         query = str(tracker.get_slot('query'))
-        message = getGoogleResult(query)
-        dispatcher.utter_message(message)
-        return [SlotSet('query', tracker.get_slot('query'))]
+        if query == "None":
+            dispatcher.utter_message("I don't understand the question.")
+        else:
+            message = getGoogleResult(query)
+            dispatcher.utter_message(message)
+        return [SlotSet('query', None)]

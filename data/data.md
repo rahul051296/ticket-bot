@@ -3,10 +3,10 @@
 - hey
 - hello
 - hi
+- hey man
 - hello there
 - good morning
 - good evening
-- moin
 - hey there
 - let's go
 - hey dude
@@ -14,20 +14,15 @@
 - goodevening
 - good afternoon
 
-## intent:order_details
-- what about order with id [42](orderId)
-- give the details of the order with id [332](orderId)  
-- details of order with id [13](orderId)
-- get the details following order with id [126](orderId)
-- [24](orderId) order details
-- can you give some details of order [34](orderId)
-- pls get the details of tickets
-- order id is [36](orderId)
-- [298](orderId) is my orderId id
-- ok then what about [56](orderId)
-- order [462](orderId) details
-- get order [563](orderId) information
-- i want some info about [36](orderId) order
+## intent:inform
+- i need some information
+- i need your help in getting some info
+- can you give me some info
+- i want something 
+- i want to know few details
+- will you provide some details
+- can you fetch some details for me
+- would you mind giving me some details
 
 ## intent:ticket
 - ticket status
@@ -43,7 +38,7 @@
 - [244](tId) ticket details
 - can you give some details of ticket [193](tId)
 - pls get the details of tickets
-- id is [362](tId)
+- ticket id is [362](tId)
 - [298](tId) is my ticket id
 - ok then what about [563](tId)
 - wanna some info about tickets
@@ -52,14 +47,36 @@
 - ticket [462](tId) details
 - get ticket [563](tId) information
 - i want some info about [365](tId) ticket
-- i need status of tickets [234](tId) and [66](tId)
-- [152](tId),[521](tId) ticket detals
-- get the status of tikcets [472](tId) & [941](tId)
-- i need details of some tickets
-- [123](tId) [525](tId) [582](tId) [362](tId) [835](tId)
 
+## intent:order_details
+- order details
+- details of my order
+- what about order with id [843](orderId)
+- give the order details
+- order details pls
+- [832](orderId)
+- give the details of the order with id [483](orderId)  
+- i want to know my order details
+- details of order with id [905](orderId)
+- get the details following order with id [735](orderId)
+- [984](orderId) order details
+- can you give some details of order [429](orderId)
+- pls get the details of order
+- order id is [985](orderId)
+- [913](orderId) is my order id
+- ok then what about [563](orderId)
+- wanna some info about my orders
+- what about my orders
+- orders
+- order [183](orderId) details
+- get order [127](orderId) information
+- i want some info about [347](orderId) order
+- i need details of my order
 
 ## intent:customer_details
+- get me customer details
+- i need information regarding a customer
+- i need some info the cusomer
 - Get me the customer details of id [be6746mar23](userId)
 - Get me the customer details for id [a451de123ea](userId)
 - I want the details of customer with id [be6746mar23](userId)
@@ -73,6 +90,28 @@
 - How are you man?
 - How's life?
 - How's everything going?
+- I'm good, how are you?
+- I'm good, what about you?
+
+## intent:alright
+- fine
+- I am doing good
+- I'm good
+- I am feeling very good
+- perfect
+- very good
+- great
+- amazing
+- thanks
+- thank you very much
+- nice
+- tqsm
+- thanks you so much
+- ok thanks
+- thank you
+- you are helpful
+- You're awesome
+- amazing
 
 ## intent:personal
 - Who are you?
@@ -89,14 +128,6 @@
 - What's going on?
 - What are you upto?
 
-## intent:alright
-- You are
-- yes
-- thank you
-- you are helpful
-- You're awesome
-- amazing
-
 ## intent:what_can_do
 - What can you do?
 - What you do?
@@ -104,43 +135,11 @@
 - You can do what?
 - What is your purpose?
 
-## intent:mood
-- perfect
-- very good
-- great
-- amazing
-- feeling like a king
-- wonderful
-- I am feeling very good
-- I am great
-- I am amazing
-- I am going to save the world
-- super
-- extremely good
-- so so perfect
-- so good
-- so perfect
-- my day was horrible
-- I am sad
-- I don't feel very well
-- I am disappointed
-- super sad
-- I'm so sad
-- sad
-- very sad
-- unhappy
-- not so good
-- not very good
-- extremly sad
-- so saad
-- so sad
-
 ## intent:goodbye
 - cu
 - good by
 - cee you later
 - good night
-- good afternoon
 - bye
 - goodbye
 - have a nice day
@@ -150,28 +149,18 @@
 - see you later
 - farewell
 
-## intent:thankyou
-- thanks
-- thank you
-- thank you very much
-- nice
-- tqsm
-- thanks you so much
-- ok thanks
+## intent:google_search
+- What is the [time right now?](query)
+- Where can i find [chinese food](query)
+- I want to [talk to my friend](query)
+- Very [sunny outside](query)
+- Tell me the [Movies that are playing in Chennai](query) 
+- Search for [Hypervisor](query)
+- What other [chatbots are available in the market](query)
+- Tell me the [Opposite of good](query)
+- Meaning of [Super](query)
+- I need to [buy a phone](query)
 
-## intent:random_query
-- [What is the time right now?](query)
-- [Where can i find chinese food](query)
-- [I want to talk to my friend](query)
-- [Very sunny outside](query)
-- [Movies that are playing in Chennai](query)
-- [Data is everywhere](query)
-- [What other chatbots are available in the market](query)
-- [Opposite of good](query)
-- [Sometimes it is good to know about the environment](query)
-- [I need to buy a phone](query)
-- [gvajyhgabskjh](query)
-- [iuhgqui qwygqiuy](query)
 
 ## regex:tId
 - /^[1-9]{3}$/

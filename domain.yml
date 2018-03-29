@@ -1,34 +1,33 @@
 slots:
-  tId:
-    type: list
   userId:
     type: text
   orderId:
     type: text
   query:
     type: text
+  tId:
+    type: text
 
 
 intents:
  - greet
+ - inform
  - ticket
  - mood
  - goodbye
- - thankyou
+ - alright
  - formality
  - personal
  - what_doing
- - alright
  - what_can_do
- - out_of_scope
  - customer_details
  - order_details
- - random_query
+ - google_search
 
 entities:
- - tId
  - userId
  - orderId
+ - tId
  - query
 
 templates:
@@ -41,14 +40,24 @@ templates:
   utter_wish:
     - 'How are you?'
     - 'Hope you are doing well :)'
-  
+    
+  utter_formality:
+    - "Going good."
+    - "Yeah, everything is going well."
+    
+  utter_alright:
+    - "I'm glad to hear that :)"
+    - "Cheers!"
+    - "Great!"
+    - ':)'
+    
   utter_help:
-    - 'May I help you?'
-    - 'Do you need any assistance?'
     - 'How can I help you?'
-    - 'I am at your assistance'
-    - 'Need any help?'
-    - 'Is everything fine?'
+    - 'Do you need my help?'
+    
+  utter_inform:
+    - "Sure! What kind of information do you need?"
+    - "Do you need Ticket details or Customer details or Order details?"
   
   utter_ask_tid:
     - 'Ticket id please'
@@ -58,7 +67,41 @@ templates:
     - 'Enter the id of the ticket'
     - 'Sure please tell the ticket id'
     - 'What is the ticket id?'
+    
+  utter_ask_orderId:
+    - 'Order id please'
+    - 'Would you mind telling the order id'
+    - 'Providing order id will make my job easy'
+    - 'Please provide the order id'
+    - 'Enter the id of the order'
+    - 'Sure please tell the order id'
+    - 'What is the order id?'
+   
+  utter_ask_userId:
+    - 'User id please'
+    - 'Would you mind telling the user id'
+    - 'Providing user id will make my job easy'
+    - 'Please provide the user id'
+    - 'Enter the id of the user'
+    - 'Sure please tell the user id'
+    - 'What is the user id?'
   
+    
+  utter_what_doing:
+    - "Nothing much, mostly just work.."
+    - "Just the usual routine.."
+    - "Doing my job as usual.."
+    
+  utter_anything_else:
+    - "Need anthing else?"
+    - "If you need anything i'm happy to help"
+
+  utter_personal:
+    - "I am an AI Chatbot here to serve you. :)"
+    
+  utter_what_can_do:
+    - "I can guide you around this site."
+    
   utter_goodbye:
     - 'Talk to you later.'
     - 'Bye bye'
@@ -68,44 +111,21 @@ templates:
     - 'Good bye'
     - 'Have a nice day'
   
-  utter_thankyou:
-    - 'You are welcome'
-    - ':)'
-    
-  utter_what_doing:
-    - "Nothing much, mostly just work.."
-    - "Just the usual routine.."
-    - "Doing my job as usual.."
-    
-  utter_personal:
-    - "I'm an AI Chatbot. I can guide you around the site if you need any help. :)"
-    - "I'm an AI Chatbot here to serve you. :)"
-  
-  utter_alright:
-    - "I'm glad to hear that :)"
-    - "Cheers!"
-    - "Great!"
-    
-  utter_what_can_do:
-    - "I can guide you around this site."
-    
-  utter_formality:
-    - "Good good. Hope you're doing well too."
-    - "Yeah, everything is going well. Hope you're doing fine aswell"
-
 actions:
+ - utter_inform
+ - utter_ask_userId
  - utter_greet
  - utter_wish
  - utter_goodbye
  - utter_ask_tid
  - utter_help
- - utter_thankyou
- - utter_personal
  - utter_alright
+ - utter_personal
  - utter_what_doing
  - utter_what_can_do
  - utter_formality
+ - utter_ask_orderId
  - actions.GetTicketDetails
  - actions.GetCustomerDetails
  - actions.GetOrderDetails
- - actions.GetRandomQuery
+ - actions.GetGoogleSearch

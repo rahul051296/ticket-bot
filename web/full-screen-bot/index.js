@@ -31,11 +31,13 @@ function respond(msg) {
 		.then(function (data) {
 			console.log(data);
 			if(data[0]){
-				let li = document.createElement('li');
-				li.innerHTML = data;
-				li.className = 'responder';
-				ul.appendChild(li)
-				element.scrollTop = element.scrollHeight;
+				for (let d of data) {
+					let li = document.createElement('li');
+					li.innerHTML = d;
+					li.className = 'responder';
+					ul.appendChild(li)
+					element.scrollTop = element.scrollHeight;
+				}
 			}
 			else{
 				let li = document.createElement('li');
