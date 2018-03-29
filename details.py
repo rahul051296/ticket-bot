@@ -52,7 +52,7 @@ def getOrderDetails(orderId):
 
 
 def getGoogleResult(query):
-    result = "I was not able to understand your question.. <br>This is what i found on the web for <i>'{}'</i> <br> <a href='https://www.google.co.in/search?q={}'>Click Here</a>".format(query,query)
+    result = "I was not able to understand your question.. <br>This is what I found on the web for <i>'{}'</i> <br> <a href='https://www.google.co.in/search?q={}' target='_blank'>Click Here</a>".format(query,query)
     return result
 
 

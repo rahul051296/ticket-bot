@@ -23,7 +23,7 @@ intents:
  - out_of_scope
  - customer_details
  - order_details
- - random_query
+ - google_search
 
 entities:
  - tId
@@ -43,12 +43,10 @@ templates:
     - 'Hope you are doing well :)'
   
   utter_help:
-    - 'May I help you?'
-    - 'Do you need any assistance?'
     - 'How can I help you?'
-    - 'I am at your assistance'
-    - 'Need any help?'
-    - 'Is everything fine?'
+    - 'Do you need my assistance?'
+    - 'I am at your assistance, if you need me'
+    - 'Do need any help?'
   
   utter_ask_tid:
     - 'Ticket id please'
@@ -108,4 +106,4 @@ actions:
  - actions.GetTicketDetails
  - actions.GetCustomerDetails
  - actions.GetOrderDetails
- - actions.GetRandomQuery
+ - actions.GetGoogleSearch

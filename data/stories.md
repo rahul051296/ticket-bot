@@ -21,9 +21,9 @@
     - export
 
 ## Generated Story 3834930610052290091
-* random_query{"query": "What is the weather in London?"}
-    - slot{"query": "What is the weather in London?"}
-    - utter_random_query
+* google_search{"query": "weather in London?"}
+    - slot{"query": "weather in London?"}
+    - utter_google_search
     - export
 
 ## Generated Story -4743213857576957234
@@ -297,23 +297,20 @@
     - utter_goodbye
 
 ## Generated Story 8503053808274981170
-* random_query{"query": "what is the value of pi?"}
-    - slot{"query": "what is the value of pi?"}
-    - utter_random_query
+* google_search{"query": "value of pi?"}
+    - slot{"query": "value of pi?"}
+    - utter_google_search
     - slot{"query": null}
     - export
 ## Generated Story 1017332252840745558
 * greet
     - utter_greet
     - utter_wish
-* mood{"query": "i'm good"}
-    - slot{"query": "i'm good"}
+* mood
     - utter_help
-* formality{"query": "how are you?"}
-    - slot{"query": "how are you?"}
+* formality
     - utter_formality
-* formality{"query": "how are you?"}
-    - slot{"query": "how are you?"}
+* formality
     - utter_formality
     - export
 ## Generated Story -2139009536882699728

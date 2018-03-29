@@ -46,12 +46,15 @@ class GetOrderDetails(Action):
         return [SlotSet('orderId', None)]
 
 
-class GetRandomQuery(Action):
+class GetGoogleSearch(Action):
     def name(self):
-        return 'utter_random_query'
+        return 'utter_google_search'
 
     def run(self, dispatcher, tracker, domain):
         query = str(tracker.get_slot('query'))
-        message = getGoogleResult(query)
-        dispatcher.utter_message(message)
-        return [SlotSet('query', tracker.get_slot('query'))]
+        if query == "None":
+            dispatcher.utter_message("I don't understand the question.")
+        else:
+            message = getGoogleResult(query)
+            dispatcher.utter_message(message)
+        return [SlotSet('query', None)]

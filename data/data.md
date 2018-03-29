@@ -3,10 +3,10 @@
 - hey
 - hello
 - hi
+- hey man
 - hello there
 - good morning
 - good evening
-- moin
 - hey there
 - let's go
 - hey dude
@@ -73,6 +73,7 @@
 - How are you man?
 - How's life?
 - How's everything going?
+- I'm good, how are you?
 
 ## intent:personal
 - Who are you?
@@ -140,7 +141,6 @@
 - good by
 - cee you later
 - good night
-- good afternoon
 - bye
 - goodbye
 - have a nice day
@@ -159,19 +159,17 @@
 - thanks you so much
 - ok thanks
 
-## intent:random_query
-- [What is the time right now?](query)
-- [Where can i find chinese food](query)
-- [I want to talk to my friend](query)
-- [Very sunny outside](query)
-- [Movies that are playing in Chennai](query)
-- [Data is everywhere](query)
-- [What other chatbots are available in the market](query)
-- [Opposite of good](query)
-- [Sometimes it is good to know about the environment](query)
-- [I need to buy a phone](query)
-- [gvajyhgabskjh](query)
-- [iuhgqui qwygqiuy](query)
+## intent:google_search
+- What is the [time right now?](query)
+- Where can i find [chinese food](query)
+- I want to [talk to my friend](query)
+- Very [sunny outside](query)
+- Tell me the [Movies that are playing in Chennai](query) 
+- Search for [Hypervisor](query)
+- What other [chatbots are available in the market](query)
+- Tell me the [Opposite of good](query)
+- Meaning of [Super](query)
+- I need to [buy a phone](query)
 
 ## regex:tId
 - /^[1-9]{3}$/
