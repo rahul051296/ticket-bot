@@ -1,11 +1,11 @@
 slots:
-  tId:
-    type: text
   userId:
     type: text
   orderId:
     type: text
   query:
+    type: text
+  tId:
     type: text
 
 
@@ -15,21 +15,19 @@ intents:
  - ticket
  - mood
  - goodbye
- - thankyou
+ - alright
  - formality
  - personal
  - what_doing
  - what_can_do
- - out_of_scope
- - order_details
  - customer_details
  - order_details
  - google_search
 
 entities:
- - tId
  - userId
  - orderId
+ - tId
  - query
 
 templates:
@@ -44,28 +42,24 @@ templates:
     - 'Hope you are doing well :)'
     
   utter_formality:
-    - "Good good. Hope you're doing well too."
-    - "Yeah, everything is going well. Hope you're doing fine aswell"
+    - "Going good."
+    - "Yeah, everything is going well."
     
-  utter_personal:
-    - "I'm an AI Chatbot. I can guide you, if you need any help. :)"
-    - "I'm an AI Chatbot here to serve you. :)"
-    
-  utter_what_can_do:
-    - "I can guide you around this site."
+  utter_alright:
+    - "I'm glad to hear that :)"
+    - "Cheers!"
+    - "Great!"
+    - ':)'
     
   utter_help:
     - 'How can I help you?'
     - 'I am at your assistance'
     - 'Need any help?'
     - 'Is everything fine?'
-
+    
   utter_inform:
     - "Sure! What kind of information do you need?"
     - "Do you need Ticket details or Customer details or Order details?"
-    - 'Do you need my assistance?'
-    - 'I am at your assistance, if you need me'
-    - 'Do need any help?'
   
   utter_ask_tid:
     - 'Ticket id please'
@@ -94,36 +88,18 @@ templates:
     - 'Sure please tell the user id'
     - 'What is the user id?'
   
-  utter_on_it: 
-    - "I'm on it"
-  
-  utter_thankyou:
-    - "I'm glad to hear that :)"
-    - "Cheers!"
-    - "Great!"
-    - 'You are welcome'
-    - ':)'
     
   utter_what_doing:
     - "Nothing much, mostly just work.."
     - "Just the usual routine.."
     - "Doing my job as usual.."
-        
-  utter_order_details:
-    - "{orderId} is the order id"
     
   utter_anything_else:
     - "Need anthing else?"
     - "If you need anything i'm happy to help"
 
   utter_personal:
-    - "I'm an AI Chatbot. I can guide you around the site if you need any help. :)"
-    - "I'm an AI Chatbot here to serve you. :)"
-  
-  utter_alright:
-    - "I'm glad to hear that :)"
-    - "Cheers!"
-    - "Great!"
+    - "I am an AI Chatbot here to serve you. :)"
     
   utter_what_can_do:
     - "I can guide you around this site."
@@ -145,13 +121,12 @@ actions:
  - utter_goodbye
  - utter_ask_tid
  - utter_help
- - utter_thankyou
+ - utter_alright
  - utter_personal
  - utter_what_doing
  - utter_what_can_do
  - utter_formality
  - utter_ask_orderId
- - utter_order_details
  - actions.GetTicketDetails
  - actions.GetCustomerDetails
  - actions.GetOrderDetails
