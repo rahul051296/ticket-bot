@@ -1,3 +1,41 @@
+## full story
+* greet
+    - utter_greet
+    - utter_wish
+*mood
+    - utter_help
+*formailty
+    - utter_formality
+*personal
+    - utter_personal
+*what_can_do
+    - utter_what_can_do
+*inform
+    - utter_inform
+*ticket
+    - utter_ask_tid
+*ticket[tId=234]
+    - slot{"tId":"234"}
+    - utter_on_it
+    - utter_ticket_details
+*order_details
+    - utter_ask_oId
+*order_details[oId=14]
+    - slot{"oId":"14"}
+    - utter_on_it
+    - utter_order_details
+*customer_details
+    - utter_ask_userId
+*customer_details[userId=ae1246feb23]
+    - slot{"userId":"ae1246feb23"}
+    - utter_on_it
+    - utter_customer_details
+* goodbye
+    - utter_goodbye
+    - export
+
+
+
 ## Generated Story -8930052527453218503
 * greet
     - utter_greet
@@ -9,6 +47,40 @@
     - utter_goodbye
     - export
 
+## story 01
+*ticket
+    - utter_ask_tid
+*ticket[tId=234]
+    - slot{"tId":"234"}
+    - utter_on_it
+    - utter_ticket_details
+*order_details
+    - utter_ask_oId
+*order_details[oId=14]
+    - slot{"oId":"14"}
+    - utter_on_it
+    - utter_order_details
+*customer_details
+    - utter_ask_userId
+*customer_details[userId=ae1246feb23]
+    - slot{"userId":"ae1246feb23"}
+    - utter_on_it
+    - utter_customer_details
+
+## story 02
+*ticket[tId=234]
+    - slot{"tId":"234"}
+    - utter_on_it
+    - utter_ticket_details
+*order_details[oId=14]
+    - slot{"oId":"14"}
+    - utter_on_it
+    - utter_order_details
+*customer_details[userId=ae1246feb23]
+    - slot{"userId":"ae1246feb23"}
+    - utter_on_it
+    - utter_customer_details
+    
 ## Generated Story 3834930610052290095
 * customer_details{"userId": "200"}
     - utter_customer_details
@@ -250,13 +322,6 @@
 * goodbye
     - utter_goodbye
     - export
-
-    
-## Generated Story 1202144892448485348
-* greet
-    - utter_greet
-* out_of_scope
-    - fallback
 
 ## Generated Story 4618288701478642746
 * greet

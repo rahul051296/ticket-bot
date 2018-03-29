@@ -51,15 +51,3 @@ class GetTicketDetails(Action):
         message = getTicketStatus(ticketId)
         dispatcher.utter_message(message)
         return [SlotSet('tId', tracker.get_slot('tId'))]
-
-
-class ActionFallback(Action):
-
-    def name(self):
-        return "fallback"
-
-    def run(self, dispatcher, tracker, domain):
-        from rasa_core.events import UserUtteranceReverted
-
-        dispatcher.utter_message("Sorry, didn't get that. Try again.")
-        return [UserUtteranceReverted()]

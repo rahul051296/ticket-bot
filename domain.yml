@@ -1,6 +1,6 @@
 slots:
   tId:
-    type: list
+    type: text
   userId:
     type: text
   oId:
@@ -9,6 +9,7 @@ slots:
 
 intents:
  - greet
+ - inform
  - ticket
  - mood
  - goodbye
@@ -16,7 +17,6 @@ intents:
  - formality
  - personal
  - what_doing
- - alright
  - what_can_do
  - out_of_scope
  - order_details
@@ -25,7 +25,8 @@ intents:
 entities:
  - tId
  - userId
-
+ - oId
+ 
 templates:
   utter_greet:
     - 'Hello!'
@@ -36,7 +37,18 @@ templates:
   utter_wish:
     - 'How are you?'
     - 'Hope you are doing well :)'
-  
+    
+  utter_formality:
+    - "Good good. Hope you're doing well too."
+    - "Yeah, everything is going well. Hope you're doing fine aswell"
+    
+  utter_personal:
+    - "I'm an AI Chatbot. I can guide you, if you need any help. :)"
+    - "I'm an AI Chatbot here to serve you. :)"
+    
+  utter_what_can_do:
+    - "I can guide you around this site."
+    
   utter_help:
     - 'May I help you?'
     - 'Do you need any assistance?'
@@ -44,6 +56,10 @@ templates:
     - 'I am at your assistance'
     - 'Need any help?'
     - 'Is everything fine?'
+
+  utter_inform:
+    - "Sure! What kind of information do you need?"
+    - "Do you need Ticket details or Customer details or Order details?"
   
   utter_ask_tid:
     - 'Ticket id please'
@@ -53,7 +69,47 @@ templates:
     - 'Enter the id of the ticket'
     - 'Sure please tell the ticket id'
     - 'What is the ticket id?'
+    
+  utter_ask_oid:
+    - 'Order id please'
+    - 'Would you mind telling the order id'
+    - 'Providing order id will make my job easy'
+    - 'Please provide the order id'
+    - 'Enter the id of the order'
+    - 'Sure please tell the order id'
+    - 'What is the order id?'
+   
+  utter_ask_userId:
+    - 'User id please'
+    - 'Would you mind telling the user id'
+    - 'Providing user id will make my job easy'
+    - 'Please provide the user id'
+    - 'Enter the id of the user'
+    - 'Sure please tell the user id'
+    - 'What is the user id?'
   
+  utter_on_it: 
+    - "I'm on it"
+  
+  utter_thankyou:
+    - "I'm glad to hear that :)"
+    - "Cheers!"
+    - "Great!"
+    - 'You are welcome'
+    - ':)'
+    
+  utter_what_doing:
+    - "Nothing much, mostly just work.."
+    - "Just the usual routine.."
+    - "Doing my job as usual.."
+        
+  utter_order_details:
+    - "{oId} is the order id"
+    
+  utter_anything_else:
+    - "Need anthing else?"
+    - "If you need anything i'm happy to help"
+    
   utter_goodbye:
     - 'Talk to you later.'
     - 'Bye bye'
@@ -63,45 +119,9 @@ templates:
     - 'Good bye'
     - 'Have a nice day'
   
-  utter_thankyou:
-    - 'You are welcome'
-    - ':)'
-    
-  utter_on_it: 
-    - "I'm on it"
-    
-  utter_what_doing:
-    - "Nothing much, mostly just work.."
-    - "Just the usual routine.."
-    - "Doing my job as usual.."
-    
-  utter_personal:
-    - "I'm an AI Chatbot. I can guide you around the hub if you need any help. :)"
-    - "I'm an AI Chatbot here to serve you. :)"
-  
-  utter_alright:
-    - "I'm glad to hear that :)"
-    - "Cheers!"
-    - "Great!"
-    
-  utter_what_can_do:
-    - "I can guide you around this site."
-    
-  utter_formality:
-    - "Good good. Hope you're doing well too."
-    - "Yeah, everything is going well. Hope you're doing fine aswell"
-  utter_order_details:
-    - "{oId} is the order id"
-  utter_ask_oid:
-    - 'Order id please'
-    - 'Would you mind telling the order id'
-    - 'Providing order id will make my job easy'
-    - 'Please provide the order id'
-    - 'Enter the id of the order'
-    - 'Sure please tell the order id'
-    - 'What is the order id?'
-
 actions:
+ - utter_inform
+ - utter_ask_userId
  - utter_greet
  - utter_wish
  - utter_goodbye
@@ -110,12 +130,10 @@ actions:
  - utter_on_it
  - utter_thankyou
  - utter_personal
- - utter_alright
  - utter_what_doing
  - utter_what_can_do
  - utter_formality
  - utter_ask_oid
  - utter_order_details
- - actions.ActionFallback
  - actions.GetTicketDetails
  - actions.GetCustomerDetails

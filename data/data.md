@@ -14,6 +14,16 @@
 - goodevening
 - good afternoon
 
+## intent:inform
+- i need some information
+- i need your help in getting some info
+- can you give me some info
+- i want something 
+- i want to know few details
+- will you provide some details
+- can you fetch some details for me
+- would you mind giving me some details
+
 ## intent:order_details
 - order details
 - details of my order
@@ -69,6 +79,9 @@
 - [123](tId) [525](tId) [582](tId) [362](tId) [835](tId)
 
 ## intent:customer_details
+- get me customer details
+- i need information regarding a customer
+- i need some info the cusomer
 - Get me the customer details of id [be6746mar23](userId)
 - Get me the customer details for id [a451de123ea](userId)
 - I want the details of customer with id [be6746mar23](userId)
@@ -97,14 +110,6 @@
 - What doing man?
 - What's going on?
 - What are you upto?
-
-## intent:alright
-- You are
-- yes
-- thank you
-- you are helpful
-- You're awesome
-- amazing
 
 ## intent:what_can_do
 - What can you do?
@@ -161,14 +166,15 @@
 
 ## intent:thankyou
 - thanks
-- thank you
 - thank you very much
 - nice
 - tqsm
 - thanks you so much
 - ok thanks
-
-## intent:out_of_scope
+- thank you
+- you are helpful
+- You're awesome
+- amazing
 
 ## regex:tId
 - /^[1-9]{3}$/
