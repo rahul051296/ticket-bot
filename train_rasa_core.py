@@ -31,4 +31,3 @@ if __name__ == '__main__':
     logging.basicConfig(level="INFO")
     nlu_interpreter = RasaNLUInterpreter('./models/nlu/default/nlu_model')
     train_core(ConsoleInputChannel(), nlu_interpreter)
-    
