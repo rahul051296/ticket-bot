@@ -1,5 +1,7 @@
 import json
 
+from soup import searchBingMeaning
+
 
 def getTicketStatus(ticketId):
     global response
@@ -56,5 +58,10 @@ def getGoogleResult(query):
     return result
 
 
+def getMeaning(query):
+    meaning = searchBingMeaning(query)
+    return meaning
+
+
 if __name__ == '__main__':
-    print(getOrderDetails(14))
+    print(getMeaning("wire"))
