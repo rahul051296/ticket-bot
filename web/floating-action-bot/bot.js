@@ -1,4 +1,19 @@
 let status = document.getElementById('status');
+let chatbox = document.getElementById('main-box');
+let id = Math.floor(Math.random() * 1000 + 1);
+let ul = document.getElementById('conversation');
+let chat = document.getElementById("chat-container");
+let input = document.getElementById("chat-input");
+let fab = document.getElementById('fab');
+let fab_close = document.getElementById('fab-close');
+
+input.addEventListener("keyup", function (event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("btn").click();
+    }
+});
+
 window.onload = function(){
     fetch('http://localhost:5004/status',{
         method:'GET'
@@ -11,32 +26,37 @@ window.onload = function(){
     })
 }
 
-
-let chatbox = document.getElementById('main-box');
-chatbox.style.display = "none"
 function openchat() {
     chatbox.style.display = "block"
+    fab.style.display = "none";
+    fab_close.style.display = "block";
 }
+
 function closechat() {
-    chatbox.style.display = "none"
+    chatbox.style.display = "none";
+    fab_close.style.display = "none";
+    fab.style.display = "block";
 }
 
-
-let id = Math.floor(Math.random() * 1000 + 1);
-console.log(id)
-let ul = document.getElementById('conversation');
-var chat = document.getElementById("chat-container");
+function speak(msg) {
+    var speech = new SpeechSynthesisUtterance(msg);
+    speech.voice = speechSynthesis.getVoices()[3];
+    window.speechSynthesis.speak(speech);
+}
 
 function send() {
     let msg = document.getElementById('chat-input').value;
-    let li = document.createElement('li');
-    li.appendChild(document.createTextNode(msg));
-    li.className = "sender"
-    ul.appendChild(li);
-    respond(msg);
-    document.getElementById('chat-input').value = "";
-    chat.scrollTop = chat.scrollHeight;
+    if(msg!=''){
+        let li = document.createElement('li');
+        li.appendChild(document.createTextNode(msg));
+        li.className = "sender"
+        ul.appendChild(li);
+        respond(msg);
+        document.getElementById('chat-input').value = "";
+        chat.scrollTop = chat.scrollHeight;
+    }
 }
+
 function respond(msg) {
     data = {
         query: msg,
@@ -58,6 +78,8 @@ function respond(msg) {
                 for(let d of data){
                     let li = document.createElement('li');
                     li.innerHTML = d;
+                    if (voice() == true)
+                        speak(li.innerText);
                     li.className = 'responder';
                     ul.appendChild(li)
                     chat.scrollTop = chat.scrollHeight;
@@ -83,10 +105,11 @@ function respond(msg) {
         });
 
 }
-var input = document.getElementById("chat-input");
-input.addEventListener("keyup", function (event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-        document.getElementById("btn").click();
-    }
-});
+
+function voice() {
+    let speaker = document.getElementById('voice').checked;
+    if (speaker == true)
+        return true;
+    else
+        return false;
+}

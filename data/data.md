@@ -1212,6 +1212,8 @@
 - what is up
 - what's up
 - whazzup
+- sup
+- sup?
 - good what's up
 - I said what's up
 - then what's up

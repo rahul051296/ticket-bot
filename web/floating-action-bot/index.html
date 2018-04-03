@@ -18,8 +18,13 @@
                         <i class="fas fa-circle" style="color:grey"></i> Checking..
                     </span> 
                 </h6>
-                <span class="closer" onclick="closechat()">
-                    <i class="fas fa-times"></i>
+                <span class="closer">
+                    <span class="voice-box" title="Listen to the HubBot">
+                        <input type="checkbox" onclick="voice();" id="voice" name="voice">
+                        <label for="voice" class="label-color-voice">
+                            <i class="fas fa-volume-up"></i>
+                        </label>
+                    </span>
                 </span>
             </header>
             <div id="chat-container">
@@ -39,6 +44,9 @@
             </section>
         </div>
         <div id="fab" class="shadow" onclick="openchat()">
+            <i class="fas fa-1x fa-envelope"></i>
+        </div>
+        <div id="fab-close" class="shadow" onclick="closechat()">
             <i class="fas fa-1x fa-envelope-open"></i>
         </div>
     </div>

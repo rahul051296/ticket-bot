@@ -8,6 +8,9 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
 
 }
+#main-box{
+    display: none;
+}
 #chat-open {
     position: fixed;
     bottom: 12%;
@@ -75,7 +78,7 @@ h6{
 #fab {
     z-index: 4;
     position: fixed;
-    right: 1.5%;
+    right: 1%;
     bottom: 1%;
     font-size: 2em;
     padding: 8px 15px;
@@ -85,14 +88,41 @@ h6{
     display: inline;
     cursor: pointer;
 }
+
+#fab-close {
+    z-index: 3;
+    position: fixed;
+    right: 1%;
+    bottom: 1%;
+    font-size: 2em;
+    padding: 8px 15px;
+    background: #243447;
+    border-radius: 100%;
+    color: white;
+    display: inline;
+    cursor: pointer;
+}
+
 .closer {
     float: right;
     margin-top: -50px;
     color: #fff;
     cursor: pointer;
 }
+.voice-box input[type=checkbox] {
+    display: none;
+}
+
+.voice-box input[type=checkbox]:checked+.label-color-voice {
+    color: white;
+}
+
+.label-color-voice {
+    color: rgb(184, 183, 183);
+    cursor: pointer;
+}
 @media only screen and (max-width:360px) {
     #chat-container {
-    width: 300px;
-}
+        width: 300px;
+    }
 }
