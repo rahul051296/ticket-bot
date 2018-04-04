@@ -13,8 +13,6 @@ slots:
     type: text
   location:
     type: text
-  word:
-    type: text
 
 
 entities:
@@ -593,15 +591,15 @@ templates:
         - "Okay then."
 
 actions:
-  - actions.searchWeather
-  - actions.searchMeaning
-  - utter_ask_userId
-  - utter_ask_tid
-  - utter_ask_orderId
   - actions.GetTicketDetails
   - actions.GetCustomerDetails
   - actions.GetOrderDetails
   - actions.GetTranslation
+  - actions.GetWeatherDetails
+  - actions.GetWordMeaning
+  - utter_ask_userId
+  - utter_ask_tid
+  - utter_ask_orderId
   - utter_smalltalk.agent.acquaintance
   - utter_smalltalk.agent.age
   - utter_smalltalk.agent.annoying

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-## intent:ticket
-=======
 ## intent:ticket_details
->>>>>>> 5a91df3d1a3151008c4478149accf20611d2eeb1
 - ticket status
 - details of tickets
 - what about ticket with id [462](ticketId)
@@ -47,17 +43,17 @@
 - what is the temperature in [navi mumbai](location)
 
 ## intent:word_meaning
-- get me the meaning of [life](word)
-- give me the meaning of [mouse](word)
-- meaning for [computer](word)
-- meaning for the word [rat](word)
-- what is the meaning for [keyboard](word)
-- find meaing for word [mountain](word)
-- [ghost](word) meaning
-- [lemon](word) meaning
-- [bottle](word) word meaning
-- [ticket](word) meaning
-- meaning for word [dog](word)
+- get me the meaning of [life](query)
+- give me the meaning of [mouse](query)
+- meaning for [computer](query)
+- meaning for the word [rat](query)
+- what is the meaning of [keyboard](query)
+- find meaing for word [mountain](query)
+- [ghost](query) meaning
+- [lemon](query) meaning
+- [bottle](query) word meaning
+- [ticket](query) meaning
+- meaning for word [dog](query)
 
 
 ## intent:order_details

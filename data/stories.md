@@ -25,7 +25,7 @@
 ## Generated Story -2992657373646789301
 * smalltalk.greetings.hello
     - utter_smalltalk.greetings.hello
-* ticket
+* ticket_details
     - utter_ask_tid
 * ticket_details{"orderId": "234"}
     - slot{"orderId": "234"}
@@ -47,7 +47,7 @@
     - utter_order_details
     - slot{"orderId": null}
 ## Generated Story 3852445592793712920
-* ticket
+* ticket_details
     - utter_ask_tid
 * ticket_details{"orderId": "234"}
     - slot{"orderId": "234"}
@@ -510,6 +510,10 @@
     - utter_smalltalk.greetings.hello
 * smalltalk.agent.acquaintance
     - utter_smalltalk.agent.acquaintance
+* word_meaning{"query": "life"}
+    - slot{"query": "life"}
+    - utter_word_meaning
+    - slot{"query": "life"}
 * smalltalk.agent.age
     - utter_smalltalk.agent.age
 * smalltalk.user.loves_agent
@@ -540,6 +544,10 @@
     - utter_smalltalk.agent.origin
 * smalltalk.agent.can_you_help
     - utter_smalltalk.agent.can_you_help
+* word_meaning{"query": "life"}
+    - slot{"query": "life"}
+    - utter_word_meaning
+    - slot{"query": "life"}
 * smalltalk.greetings.bye
     - utter_smalltalk.greetings.bye
     - export
@@ -582,6 +590,10 @@
     - utter_smalltalk.agent.bad
 * smalltalk.agent.my_friend
     - utter_smalltalk.agent.my_friend
+* word_meaning{"query": "life"}
+    - slot{"query": "life"}
+    - utter_word_meaning
+    - slot{"query": "life"}
 * smalltalk.greetings.bye
     - utter_smalltalk.greetings.bye
     
@@ -628,6 +640,7 @@
 * smalltalk.greetings.bye
     - utter_smalltalk.greetings.bye
     - export
+    
 ## Generated Story 338124212683510588
 * smalltalk.greetings.hello
     - utter_smalltalk.greetings.hello
@@ -671,6 +684,10 @@
     - slot{"orderId": "66"}
     - utter_ticket_details
     - slot{"ticketId": null}
+* word_meaning{"query": "life"}
+    - slot{"query": "life"}
+    - utter_word_meaning
+    - slot{"query": "life"}
 * ticket_details{"orderId": "123"}
     - slot{"orderId": "123"}
     - utter_ticket_details
@@ -679,4 +696,39 @@
     - slot{"orderId": "423"}
     - utter_ticket_details
     - slot{"ticketId": null}
+    - export
+    
+## Generated Story 6536596686316661345
+* smalltalk.greetings.hello
+    - utter_smalltalk.greetings.hello
+* weather_details{"location": "chennai"}
+    - slot{"location": "chennai"}
+    - utter_weather_details
+    - slot{"location": "chennai"}
+* weather_details{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_weather_details
+    - slot{"location": "delhi"}
+* weather_details{"location": "chennai tomorrow"}
+    - slot{"location": "chennai tomorrow"}
+    - utter_weather_details
+    - slot{"location": "chennai tomorrow"}
+* translate_data{"word": "crow", "language": "tamil"}
+    - slot{"word": "crow"}
+    - slot{"language": "tamil"}
+    - utter_translate_data
+* translate_data{"word": "cat", "language": "hindi"}
+    - slot{"word": "cat"}
+    - slot{"language": "hindi"}
+    - utter_translate_data
+    - slot{"language": "hindi"}
+* smalltalk.greetings.bye
+    - utter_smalltalk.greetings.bye
+    - export
+
+## Generated Story -3681318527859370762
+* word_meaning{"query": "life"}
+    - slot{"query": "life"}
+    - utter_word_meaning
+    - slot{"query": "life"}
     - export
