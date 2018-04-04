@@ -28,6 +28,10 @@
 - get me the weather for [mumbai tomorrow](location)
 - weather [today in london](location)
 - [new york](location) weather
+- what is the weather in [kolkata](location)
+- what is the weather in [Azerbaijan](location)
+- what is the weather in [vatican](location)
+- climate in [Dubai](location)
 - temperature in [new jersey](location)
 - [delhi's](location) temperature
 - [chennai's](location) weather
@@ -40,6 +44,8 @@
 - what is [new york's](location) weather 
 - tell me [srinagar](location) temperature
 - tell me [kochi](location) temperature
+- tell me the temperature in [lucknow](location)
+- What is the weather report of [kolkata](location)
 - what is the temperature in [navi mumbai](location)
 
 ## intent:word_meaning
@@ -49,12 +55,19 @@
 - meaning for the word [rat](query)
 - what is the meaning of [keyboard](query)
 - find meaing for word [mountain](query)
+- what is the meaning of [tumbling](query)?
+- meaning of [falling](query)
+- what is the meaning of [columns](query)
+- what is the meaning of [serenity](query)?
+- what does [tranquility](query) mean?
+- what is the meaning of [peacefullness](query)?
+- [pandemonium](query) means?
 - [ghost](query) meaning
 - [lemon](query) meaning
+- [anxious](query) means
 - [bottle](query) word meaning
 - [ticket](query) meaning
 - meaning for word [dog](query)
-
 
 ## intent:order_details
 - order details
@@ -103,6 +116,13 @@
 - what is [tiger](word) in [Tamil](language)
 - what is [apple](word) in [Korean](language)
 - what is [football](word) in [Japanese](language) 
+- what's the translation of [insecure](word) in [Bengali](language)
+- tell me the translation of [tense](word) in [Tamil](language)
+- what does [stationed](word) mean in [Tamil](language)
+- what does [edgy](word) mean in [French](language)?
+- what is the meaning of [agitated](word) in [Kannada](language)
+- what is the translation of [worried](word) in [Tamil](language)?
+- what is the meaning of [cool](query) in [Spanish](query)?
 
 ## intent:smalltalk.agent.acquaintance
 - tell me about your personality

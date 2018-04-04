@@ -12,8 +12,8 @@ def searchWeatherDetails(location):
             location))
     data = r.text
     soup = BeautifulSoup(data, "html.parser")
-    var = soup.find('span', attrs={'class': 'wob_t'}).text
-    result = "{} degree Celcius".format(var)
+    celcius = soup.find('span', attrs={'class': 'wob_t'}).text
+    result = "Weather in {} is {}° Celcius".format(location, celcius)
     return result
 
 

@@ -9,6 +9,10 @@
     - slot{"ticketId": "66"}
     - utter_ticket_details
     - slot{"ticketId": null}
+* word_meaning{"query": "potato"}
+    - slot{"query": "potato"}
+    - utter_word_meaning
+    - slot{"query": "potato"}
 * order_details{"orderId": "14"}
     - slot{"orderId": "14"}
     - utter_order_details
@@ -31,6 +35,10 @@
     - slot{"orderId": "234"}
     - utter_ticket_details
     - slot{"ticketId": null}
+* word_meaning{"query": "volcano"}
+    - slot{"query": "volcano"}
+    - utter_word_meaning
+    - slot{"query": "volcano"}
     - export
 ## Generated Story 2865882562750618852
 * order_details{"query": "know a order detail"}
@@ -648,6 +656,10 @@
     - slot{"location": "chennai"}
     - utter_weather_details
     - slot{"location": "chennai"}
+* word_meaning{"query": "ambience"}
+    - slot{"query": "ambience"}
+    - utter_word_meaning
+    - slot{"query": "ambience"}
 * weather_details
     - utter_weather_details
     - slot{"location": "chennai"}
