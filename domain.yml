@@ -5,7 +5,11 @@ slots:
     type: text
   query:
     type: text
-  tId:
+  ticketId:
+    type: text
+  word:
+    type: text
+  language:
     type: text
   location:
     type: text
@@ -16,17 +20,19 @@ slots:
 entities:
  - userId
  - orderId
- - tId
+ - ticketId
  - query
+ - language
  - location
  - word
 
 intents:
-  - ticket
+  - ticket_details
   - customer_details
   - order_details
   - weather_details
   - word_meaning
+  - translate_data
   - smalltalk.agent.acquaintance
   - smalltalk.agent.age
   - smalltalk.agent.annoying
@@ -595,6 +601,7 @@ actions:
   - actions.GetTicketDetails
   - actions.GetCustomerDetails
   - actions.GetOrderDetails
+  - actions.GetTranslation
   - utter_smalltalk.agent.acquaintance
   - utter_smalltalk.agent.age
   - utter_smalltalk.agent.annoying

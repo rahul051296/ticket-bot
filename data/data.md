@@ -1,26 +1,30 @@
+<<<<<<< HEAD
 ## intent:ticket
+=======
+## intent:ticket_details
+>>>>>>> 5a91df3d1a3151008c4478149accf20611d2eeb1
 - ticket status
 - details of tickets
-- what about ticket with id [462](tId)
+- what about ticket with id [462](ticketId)
 - give the ticket details
 - ticket details pls
-- [327](tId)
-- give the details of the ticket with id [332](tId)  
+- [327](ticketId)
+- give the details of the ticket with id [332](ticketId)  
 - i want to know my ticket details
-- details of ticket with id [123](tId)
-- get the details following ticket with id [126](tId)
-- [244](tId) ticket details
-- can you give some details of ticket [193](tId)
+- details of ticket with id [123](ticketId)
+- get the details following ticket with id [126](ticketId)
+- [244](ticketId) ticket details
+- can you give some details of ticket [193](ticketId)
 - pls get the details of tickets
-- ticket id is [362](tId)
-- [298](tId) is my ticket id
-- ok then what about [563](tId)
+- ticket id is [362](ticketId)
+- [298](ticketId) is my ticket id
+- ok then what about [563](ticketId)
 - wanna some info about tickets
 - what about my tickets
 - tickets
-- ticket [462](tId) details
-- get ticket [563](tId) information
-- i want some info about [365](tId) ticket
+- ticket [462](ticketId) details
+- get ticket [563](ticketId) information
+- i want some info about [365](ticketId) ticket
 
 ## intent:weather_details
 - get me the weather of [chennai](location)
@@ -90,6 +94,19 @@
 - I want the details of customer with id [be6746mar23](userId)
 - I want details for customer id [ae1246feb23](userId)
 - Give me the customer details of [ac8746f2323](userId)
+
+## intent:translate_data
+- [dog](word) in [tamil](language)
+- translate [cook](word) to [hindi](language)
+- i want you to translate [computer](word) to [tamil](language)
+- [umbrella](word) to [spanish](language)
+- translate [mouse](word) to [telugu](language)
+- translate [bull](word) to [tamil](language) 
+- [horse](word) in [Hindi](language)
+- translate [orange](word) to [Malayalam](language)
+- what is [tiger](word) in [Tamil](language)
+- what is [apple](word) in [Korean](language)
+- what is [football](word) in [Japanese](language) 
 
 ## intent:smalltalk.agent.acquaintance
 - tell me about your personality
