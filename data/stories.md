@@ -1,22 +1,22 @@
 ## Generated Story -6310372898247009718
 * smalltalk.greetings.hello
     - utter_smalltalk.greetings.hello
-* ticket{"tId": "234"}
-    - slot{"tId": "234"}
+* ticket_details{"ticketId": "234"}
+    - slot{"ticketId": "234"}
     - utter_ticket_details
-    - slot{"tId": null}
-* ticket{"tId": "66"}
-    - slot{"tId": "66"}
+    - slot{"ticketId": null}
+* ticket_details{"ticketId": "66"}
+    - slot{"ticketId": "66"}
     - utter_ticket_details
-    - slot{"tId": null}
+    - slot{"ticketId": null}
 * order_details{"orderId": "14"}
     - slot{"orderId": "14"}
     - utter_order_details
     - slot{"orderId": null}
-* ticket{"tId": "66"}
-    - slot{"tId": "66"}
+* ticket_details{"ticketId": "66"}
+    - slot{"ticketId": "66"}
     - utter_ticket_details
-    - slot{"tId": null}
+    - slot{"ticketId": null}
 * customer_details{"userId": "ae1246feb23"}
     - slot{"userId": "ae1246feb23"}
     - utter_customer_details
@@ -27,10 +27,10 @@
     - utter_smalltalk.greetings.hello
 * ticket
     - utter_ask_tid
-* ticket{"orderId": "234"}
+* ticket_details{"orderId": "234"}
     - slot{"orderId": "234"}
     - utter_ticket_details
-    - slot{"tId": null}
+    - slot{"ticketId": null}
     - export
 ## Generated Story 2865882562750618852
 * order_details{"query": "know a order detail"}
@@ -49,16 +49,20 @@
 ## Generated Story 3852445592793712920
 * ticket
     - utter_ask_tid
-* ticket{"orderId": "234"}
+* ticket_details{"orderId": "234"}
     - slot{"orderId": "234"}
     - utter_ticket_details
-    - slot{"tId": null}
-* ticket{"orderId": "66"}
+    - slot{"ticketId": null}
+* ticket_details{"orderId": "66"}
     - slot{"orderId": "66"}
     - utter_ticket_details
-    - slot{"tId": null}
+    - slot{"ticketId": null}
     - export
 
+## story 00
+* translate_data
+    - utter_translate_data
+    
 ## story 01
 * smalltalk.agent.acquaintance
     - utter_smalltalk.agent.acquaintance
@@ -614,4 +618,31 @@
     - utter_smalltalk.agent.funny
 * smalltalk.greetings.bye
     - utter_smalltalk.greetings.bye
+    - export
+
+## Generated Story -6256296179069674482
+* smalltalk.greetings.hello
+    - utter_smalltalk.greetings.hello
+* ticket_details
+    - utter_ask_tid
+* ticket_details{"orderId": "234"}
+    - slot{"orderId": "234"}
+    - utter_ticket_details
+    - slot{"ticketId": null}
+* customer_details{"userId": "be6746mar23"}
+    - slot{"userId": "be6746mar23"}
+    - utter_customer_details
+    - slot{"userId": "be6746mar23"}
+* ticket_details{"orderId": "66"}
+    - slot{"orderId": "66"}
+    - utter_ticket_details
+    - slot{"ticketId": null}
+* ticket_details{"orderId": "123"}
+    - slot{"orderId": "123"}
+    - utter_ticket_details
+    - slot{"ticketId": null}
+* ticket_details{"orderId": "423"}
+    - slot{"orderId": "423"}
+    - utter_ticket_details
+    - slot{"ticketId": null}
     - export

@@ -40,7 +40,7 @@ function closechat() {
 
 function speak(msg) {
     var speech = new SpeechSynthesisUtterance(msg);
-    speech.voice = speechSynthesis.getVoices()[3];
+    speech.voice = speechSynthesis.getVoices()[9];
     window.speechSynthesis.speak(speech);
 }
 

@@ -5,19 +5,26 @@ slots:
     type: text
   query:
     type: text
-  tId:
+  ticketId:
+    type: text
+  word:
+    type: text
+  language:
     type: text
 
 entities:
  - userId
  - orderId
- - tId
+ - ticketId
  - query
+ - word
+ - language
 
 intents:
-  - ticket
+  - ticket_details
   - customer_details
   - order_details
+  - translate_data
   - smalltalk.agent.acquaintance
   - smalltalk.agent.age
   - smalltalk.agent.annoying
@@ -584,6 +591,7 @@ actions:
   - actions.GetTicketDetails
   - actions.GetCustomerDetails
   - actions.GetOrderDetails
+  - actions.GetTranslation
   - utter_smalltalk.agent.acquaintance
   - utter_smalltalk.agent.age
   - utter_smalltalk.agent.annoying

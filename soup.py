@@ -54,7 +54,8 @@ def translateGoogle(word, language):
     r = s.get('https://www.google.co.in/search?q=translate+{}+in+{}&ie=UTF-8'.format(word, language))
     data = r.text
     soup = BeautifulSoup(data, "html.parser")
-    print(soup.find('pre', attrs={'id': 'tw-target-text'}).text)
+    translated = soup.find('pre', attrs={'id': 'tw-target-text'}).text
+    return translated
 
 
 if __name__ == '__main__':
