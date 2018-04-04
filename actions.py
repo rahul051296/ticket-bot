@@ -6,7 +6,7 @@ from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 
 from details import getTicketStatus, getCustomerDetails, getOrderDetails, getGoogleResult
-
+from soup import  searchWeatherDetails, searchWordMeaning
 
 class GetCustomerDetails(Action):
     def name(self):
@@ -50,15 +50,29 @@ class GetOrderDetails(Action):
         return [SlotSet('orderId', None)]
 
 
-class GetGoogleSearch(Action):
-    def name(self):
-        return 'utter_google_search'
 
-    def run(self, dispatcher, tracker, domain):
-        query = str(tracker.get_slot('query'))
-        if query == "None":
-            dispatcher.utter_message("I don't understand the question.")
+
+class searchWeather(Action):
+    def name(self):
+        return 'utter_weather_details'
+
+    def run(self,dispatcher, tracker, domain):
+        location_var = str(tracker.get_slot('location'))
+        if location_var == 'None':
+           dispatcher.utter_message('You will have to provide the location for me to get you the weather details  ')
         else:
-            message = getGoogleResult(query)
+            message = searchWeatherDetails(location_var)
             dispatcher.utter_message(message)
-        return [SlotSet('query', None)]
+        return [SlotSet('location', tracker.get_slot('location'))]
+
+class searchMeaning(Action):
+    def name(self):
+        return 'utter_word_meaning'
+
+    def run(self,dispatcher, tracker, domain):
+        word_var= str(tracker.get_slot('word'))
+        if word_var == 'None':
+            word_var = str(tracker.get_slot('word'))
+        message = searchWordMeaning(Word_var)
+        dispatcher.utter_message(message)
+        return [SlotSet('word', tracker.get_slot('word'))]

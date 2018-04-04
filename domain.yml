@@ -7,17 +7,26 @@ slots:
     type: text
   tId:
     type: text
+  location:
+    type: text
+  word:
+    type: text
+
 
 entities:
  - userId
  - orderId
  - tId
  - query
+ - location
+ - word
 
 intents:
   - ticket
   - customer_details
   - order_details
+  - weather_details
+  - word_meaning
   - smalltalk.agent.acquaintance
   - smalltalk.agent.age
   - smalltalk.agent.annoying
@@ -578,6 +587,8 @@ templates:
         - "Okay then."
 
 actions:
+  - actions.searchWeather
+  - actions.searchMeaning
   - utter_ask_userId
   - utter_ask_tid
   - utter_ask_orderId

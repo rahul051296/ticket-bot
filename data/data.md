@@ -1,5 +1,3 @@
-
-
 ## intent:ticket
 - ticket status
 - details of tickets
@@ -23,6 +21,40 @@
 - ticket [462](tId) details
 - get ticket [563](tId) information
 - i want some info about [365](tId) ticket
+
+## intent:weather_details
+- get me the weather of [chennai](location)
+- get me the weather for [banglore](location)
+- get me the weather for [mumbai tomorrow](location)
+- weather [today in london](location)
+- [new york](location) weather
+- temperature in [new jersey](location)
+- [delhi's](location) temperature
+- [chennai's](location) weather
+- [washington dc](location) weather
+- i want to know the weather details of weather in [paris](location)
+- i want to know the [barcelona's](location)weather details 
+- i need [new delhi's](location)temperature
+- what is the temperature in [new delhi](location)
+- what is weather in [washington dc](location)
+- what is [new york's](location) weather 
+- tell me [srinagar](location) temperature
+- tell me [kochi](location) temperature
+- what is the temperature in [navi mumbai](location)
+
+## intent:word_meaning
+- get me the meaning of [life](word)
+- give me the meaning of [mouse](word)
+- meaning for [computer](word)
+- meaning for the word [rat](word)
+- what is the meaning for [keyboard](word)
+- find meaing for word [mountain](word)
+- [ghost](word) meaning
+- [lemon](word) meaning
+- [bottle](word) word meaning
+- [ticket](word) meaning
+- meaning for word [dog](word)
+
 
 ## intent:order_details
 - order details
