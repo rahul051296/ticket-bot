@@ -1,4 +1,5 @@
 ## intent:details
+- can you help me finding details for id [621](iD)
 - i want to know about [order](idType) for [973](iD)
 - [customer](idType) information
 - information of [order](idType)
@@ -64,11 +65,11 @@
 - get me the weather of [chennai](location)
 - get me the weather for [banglore](location)
 - get me the weather for [mumbai tomorrow](location)
-- weather [today in london](location)
+- weather today in [london](location)
 - [new york](location) weather
 - what is the weather in [kolkata](location)
-- what is the weather in [Azerbaijan](location)
-- what is the weather in [vatican](location)
+- what is the weather in [Azerbaijan tomorrow](location) 
+- what is the weather in [vatican yesterday](location)
 - climate in [Dubai](location)
 - temperature in [new jersey](location)
 - [delhi's](location) temperature
@@ -78,12 +79,13 @@
 - i want to know the [barcelona's](location)weather details 
 - i need [new delhi's](location)temperature
 - what is the temperature in [new delhi](location)
-- what is weather in [washington dc](location)
+- what is infoather in [washington dc](location)
 - what is [new york's](location) weather 
 - tell me [srinagar](location) temperature
 - tell me [kochi](location) temperature
 - tell me the temperature in [lucknow](location)
 - What is the weather report of [kolkata](location)
+- what about weather in [tanjore](location)
 - what is the temperature in [navi mumbai](location)
 
 ## intent:word_meaning

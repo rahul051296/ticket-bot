@@ -13,7 +13,8 @@ slots:
     type: text
   location:
     type: text
-
+  query:
+    type: text
 
 entities:
   - iD
@@ -21,6 +22,7 @@ entities:
   - language
   - location
   - word
+  - query
 
 intents:
   - details
@@ -48,7 +50,6 @@ intents:
   - smalltalk.agent.happy
   - smalltalk.agent.hobby
   - smalltalk.agent.hungry
-  - smalltalk.agent.information
   - smalltalk.agent.marry_user
   - smalltalk.agent.my_friend
   - smalltalk.agent.occupation
@@ -118,7 +119,7 @@ intents:
 templates:
     utter_ask_idType:
         - 'Is it ticket id or customer id or order id?'
-        - 'Please be more specific id(ticket or customer or order)'
+        - 'Please be more specific with id(ticket or customer or order)'
 
     utter_ask_ticketId:
         - 'Ticket id please'
@@ -250,8 +251,6 @@ templates:
         - "Hungry for knowledge."
         - "I just had a byte. Ha ha. Get it? b-y-t-e."
 
-    utter_smalltalk.agent.information:
-        
     utter_smalltalk.agent.marry_user:
         - "I'm afraid I'm too virtual for such a commitment."
         - "In the virtual sense that I can, sure."

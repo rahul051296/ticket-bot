@@ -841,3 +841,53 @@
 * smalltalk.greetings.bye
     - utter_smalltalk.greetings.bye
     - export
+    
+ ## Generated Story 1803862044791158966
+* smalltalk.greetings.hello
+    - utter_smalltalk.greetings.hello
+* smalltalk.greetings.how_are_you
+    - utter_smalltalk.greetings.how_are_you
+* smalltalk.agent.acquaintance
+    - utter_smalltalk.agent.acquaintance
+* smalltalk.agent.can_you_help
+    - utter_smalltalk.agent.can_you_help
+* smalltalk.agent.can_you_help
+    - utter_smalltalk.agent.can_you_help
+* details{"idType": "ticket"}
+    - slot{"idType": "ticket"}
+    - utter_ask_ticketId
+* details{"iD": "234"}
+    - slot{"iD": "234"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* smalltalk.confirmation.yes
+    - utter_smalltalk.confirmation.yes
+* details{"iD": "234"}
+    - slot{"iD": "234"}
+    - utter_ask_idType
+* details{"idType": "ticket"}
+    - slot{"idType": "ticket"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+    - export
+
+## Generated Story -4668603640186636894
+* smalltalk.greetings.hello
+    - utter_smalltalk.greetings.hello
+* smalltalk.greetings.how_are_you
+    - utter_smalltalk.greetings.how_are_you
+* details{"iD": "183"}
+    - slot{"iD": "183"}
+    - utter_ask_idType
+* details{"idType": "customer"}
+    - slot{"idType": "customer"}
+    - utter_customer_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* smalltalk.appraisal.thank_you
+    - utter_smalltalk.appraisal.thank_you
+* smalltalk.greetings.bye
+    - utter_smalltalk.greetings.bye
+    - export

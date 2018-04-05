@@ -62,7 +62,7 @@ class GetWeatherDetails(Action):
         else:
             message = searchWeatherDetails(location)
             dispatcher.utter_message(message)
-        return [SlotSet('location', tracker.get_slot('location'))]
+        return [SlotSet('location', None)]
 
 
 class GetWordMeaning(Action):
@@ -76,7 +76,7 @@ class GetWordMeaning(Action):
         else:
             message = searchWordMeaning(word)
             dispatcher.utter_message(message)
-        return [SlotSet('query', tracker.get_slot('query'))]
+        return [SlotSet('query', None)]
 
 
 class GetTranslation(Action):
@@ -91,4 +91,4 @@ class GetTranslation(Action):
         else:
             message = translateGoogle(word, language)
             dispatcher.utter_message(message)
-            return [SlotSet('language', tracker.get_slot('language'))]
+            return [SlotSet('language', None)]
