@@ -60,6 +60,7 @@
 - I want the details of [customer](idType) with id [981](iD)
 - I want details for [customer](idType) id [645](iD)
 - Give me the [customer](idType) details of [832](iD)
+- that is about a [ticket](idType)
 
 ## intent:weather_details
 - get me the weather of [chennai](location)
@@ -78,6 +79,18 @@
 - weather in [kingston](location)
 - what is the weather in [new south wales](location)
 - [washington dc](location) weather
+- [washington dc](location) temperature
+- [delhi](location) temperature
+- [chennai](location) weather
+- [new delhi's](location) temperature
+- [new delhi's](location) climate
+- [delhi's](location) climate
+- [chennai](location) climate
+- [washington dc](location) climate
+- [delhi](location) climate
+- [navi mumbai](locatoin) climate
+- [new delhi's](location) climate
+- [new jersey's](location) weather
 - i want to know the weather details of weather in [paris](location)
 - i want to know the [barcelona's](location)weather details 
 - i need [new delhi's](location)temperature
@@ -91,6 +104,19 @@
 - what about weather in [tanjore](location)
 - what is the temperature in [navi mumbai](location)
 - weather in [london](location)
+- location is [chennai](location)
+- location is [new york](location)
+- [chennai](location) is the location 
+- [new york](location) is the location
+- in [chennai](location)
+- in [navi mumbai](location)
+- how's the climate
+- how is cliamte
+- how about temperature
+- how's weather
+- how about the weather
+- location is [new delhi](location)
+- location is[pune](location)
 
 ## intent:word_meaning
 - get me the meaning of [life](query)
@@ -106,14 +132,22 @@
 - what does [tranquility](query) mean?
 - what is the meaning of [peacefullness](query)?
 - [pandemonium](query) means?
+- [ghost rider](query) meaning
+- [lemon spoon](query) meaning
 - [ghost](query) meaning
 - [lemon](query) meaning
 - [anxious](query) means
 - [bottle](query) word meaning
+- [bottle neck](query) word meaning
 - [ticket](query) meaning
 - meaning for word [dog](query)
 - meaning of [thank you](query)
 - what is the meaning of [come again](query)
+- meaning for[water](query)
+- meaning for[bottle](query)
+- meaning for[water bottle](query)
+- meaning for[eye balls](query)
+- meaning for[distilled water](query)
 
 ## intent:translate_data
 - [dog](word) in [tamil](language)
