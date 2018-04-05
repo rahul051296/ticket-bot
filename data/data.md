@@ -88,7 +88,7 @@
 - [chennai](location) climate
 - [washington dc](location) climate
 - [delhi](location) climate
-- [navi mumbai](locatoin) climate
+- [navi mumbai](location) climate
 - [new delhi's](location) climate
 - [new jersey's](location) weather
 - i want to know the weather details of weather in [paris](location)
