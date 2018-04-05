@@ -87,7 +87,7 @@ function respond(msg) {
             }
             else {
                 let li = document.createElement('li');
-                let t = document.createTextNode("Sorry, I'm having technical issues");
+                let t = document.createTextNode("Sorry, I don't understand your question, try asking me in an other way");
                 li.className = 'responder';
                 li.appendChild(t)
                 ul.appendChild(li)
