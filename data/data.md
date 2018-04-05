@@ -1,36 +1,75 @@
-## intent:ticket_details
-- ticket status
-- details of tickets
-- what about ticket with id [462](ticketId)
-- give the ticket details
-- ticket details pls
-- [327](ticketId)
-- give the details of the ticket with id [332](ticketId)  
-- i want to know my ticket details
-- details of ticket with id [123](ticketId)
-- get the details following ticket with id [126](ticketId)
-- [244](ticketId) ticket details
-- can you give some details of ticket [193](ticketId)
-- pls get the details of tickets
-- ticket id is [362](ticketId)
-- [298](ticketId) is my ticket id
-- ok then what about [563](ticketId)
-- wanna some info about tickets
-- what about my tickets
-- tickets
-- ticket [462](ticketId) details
-- get ticket [563](ticketId) information
-- i want some info about [365](ticketId) ticket
+## intent:details
+- can you help me finding details for id [621](iD)
+- i want to know about [order](idType) for [973](iD)
+- [customer](idType) information
+- information of [order](idType)
+- info regarding [ticket](idType)
+- give the details of [ticket](idType) with id [738](iD)
+- the number is [273](iD)
+- [ticket](idType) status
+- details of [ticket](idType)
+- what about [ticket](idType) with id [462](iD)
+- give the [ticket](idType) details
+- [ticket](idType) details pls
+- [327](iD)
+- give the details of the [ticket](idType) with id [332](iD)  
+- i want to know my [ticket](idType) details
+- details of [ticket](idType) with id [123](iD)
+- get the details following [ticket](idType) with id [126](iD)
+- [244](iD) [ticket](idType) details
+- can you give some details of [ticket](idType) [193](iD)
+- pls get the details of [ticket](idType)
+- [ticket](idType) id is [362](iD)
+- [298](iD) is my [ticket](idType) id
+- ok then what about [563](iD)
+- wanna some info about [ticket](idType)
+- what about my [ticket](idType)
+- [ticket](idType)s
+- [ticket](idType) [462](iD) details
+- get [ticket](idType) [563](iD) information
+- i want some info about [365](iD) [ticket](idType)
+- [order](idType) details
+- get the [order](idType) details for id [574](iD)
+- details of my [order](idType)
+- what about [order](idType) with id [843](iD)
+- give the [order](idType) details
+- [order](idType) details pls
+- [832](iD)
+- give the details of the [order](idType) with id [483](iD)  
+- i want to know my [order](idType) details
+- details of [order](idType) with id [905](iD)
+- get the details following [order](idType) with id [735](iD)
+- [984](iD) [order](idType) details
+- can you give some details of [order](idType) [429](iD)
+- pls get the details of [order](idType)
+- [order](idType) id is [985](iD)
+- [913](iD) is my [order](idType) id
+- ok then what about [563](iD)
+- wanna some info about my [order](idType)
+- what about my [order](idType)
+- [order](idType)
+- [order](idType) [183](iD) details
+- get [order](idType) [127](iD) information
+- i want some info about [347](iD) [order](idType)
+- i need details of my [order](idType)
+- get me [customer](idType) details
+- i need information regarding a [customer](idType)
+- i need some info the [customer](idType)
+- Get me the [customer](idType) details of id [743](iD)
+- Get me the [customer](idType) details for id [283](iD)
+- I want the details of [customer](idType) with id [981](iD)
+- I want details for [customer](idType) id [645](iD)
+- Give me the [customer](idType) details of [832](iD)
 
 ## intent:weather_details
 - get me the weather of [chennai](location)
 - get me the weather for [banglore](location)
 - get me the weather for [mumbai tomorrow](location)
-- weather [today in london](location)
+- weather today in [london](location)
 - [new york](location) weather
 - what is the weather in [kolkata](location)
-- what is the weather in [Azerbaijan](location)
-- what is the weather in [vatican](location)
+- what is the weather in [Azerbaijan tomorrow](location) 
+- what is the weather in [vatican yesterday](location)
 - climate in [Dubai](location)
 - temperature in [new jersey](location)
 - [delhi's](location) temperature
@@ -40,12 +79,13 @@
 - i want to know the [barcelona's](location)weather details 
 - i need [new delhi's](location)temperature
 - what is the temperature in [new delhi](location)
-- what is weather in [washington dc](location)
+- what is infoather in [washington dc](location)
 - what is [new york's](location) weather 
 - tell me [srinagar](location) temperature
 - tell me [kochi](location) temperature
 - tell me the temperature in [lucknow](location)
 - What is the weather report of [kolkata](location)
+- what about weather in [tanjore](location)
 - what is the temperature in [navi mumbai](location)
 
 ## intent:word_meaning
@@ -68,41 +108,6 @@
 - [bottle](query) word meaning
 - [ticket](query) meaning
 - meaning for word [dog](query)
-
-## intent:order_details
-- order details
-- details of my order
-- what about order with id [843](orderId)
-- give the order details
-- order details pls
-- [832](orderId)
-- give the details of the order with id [483](orderId)  
-- i want to know my order details
-- details of order with id [905](orderId)
-- get the details following order with id [735](orderId)
-- [984](orderId) order details
-- can you give some details of order [429](orderId)
-- pls get the details of order
-- order id is [985](orderId)
-- [913](orderId) is my order id
-- ok then what about [563](orderId)
-- wanna some info about my orders
-- what about my orders
-- orders
-- order [183](orderId) details
-- get order [127](orderId) information
-- i want some info about [347](orderId) order
-- i need details of my order
-
-## intent:customer_details
-- get me customer details
-- i need information regarding a customer
-- i need some info the cusomer
-- Get me the customer details of id [be6746mar23](userId)
-- Get me the customer details for id [a451de123ea](userId)
-- I want the details of customer with id [be6746mar23](userId)
-- I want details for customer id [ae1246feb23](userId)
-- Give me the customer details of [ac8746f2323](userId)
 
 ## intent:translate_data
 - [dog](word) in [tamil](language)
@@ -410,6 +415,15 @@
 - do me a favor
 - are you gonna help me?
 - you ready to answer my question?
+- i need some details
+- i need some information
+- i need your help in getting some info
+- can you give me some info
+- i want something 
+- i want to know few details
+- will you provide some details
+- can you fetch some details for me
+- would you mind giving me some details
 
 ## intent:smalltalk.agent.chatbot
 - you are chatbot

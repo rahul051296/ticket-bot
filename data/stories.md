@@ -1,71 +1,127 @@
 ## Generated Story -6310372898247009718
 * smalltalk.greetings.hello
     - utter_smalltalk.greetings.hello
-* ticket_details{"ticketId": "234"}
-    - slot{"ticketId": "234"}
+*details[idType=ticket]
+    - utter_ask_ticketId
+*details[idType=ticket,iD=532]
     - utter_ticket_details
-    - slot{"ticketId": null}
-* ticket_details{"ticketId": "66"}
-    - slot{"ticketId": "66"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
-* word_meaning{"query": "potato"}
-    - slot{"query": "potato"}
-    - utter_word_meaning
-    - slot{"query": "potato"}
-* order_details{"orderId": "14"}
-    - slot{"orderId": "14"}
+    - slot{"iD": null}
+    - slot{"idType": null}
+*details[idType=order]
+    - utter_ask_orderId
+*details[idType=order,iD=432]
     - utter_order_details
-    - slot{"orderId": null}
-* ticket_details{"ticketId": "66"}
-    - slot{"ticketId": "66"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
-* customer_details{"userId": "ae1246feb23"}
-    - slot{"userId": "ae1246feb23"}
+    - slot{"iD": null}
+    - slot{"idType": null}
+*details[idType=customer]
+    - utter_ask_customerId
+*details[idType=customer,iD=832]
     - utter_customer_details
-    - slot{"userId": "ae1246feb23"}
+    - slot{"iD": null}
+    - slot{"idType": null}
+* smalltalk.greetings.bye
+    - utter_smalltalk.greetings.bye
     - export
+    
 ## Generated Story -2992657373646789301
 * smalltalk.greetings.hello
     - utter_smalltalk.greetings.hello
-* ticket_details
-    - utter_ask_tid
-* ticket_details{"orderId": "234"}
-    - slot{"orderId": "234"}
+* details{"idType": "customer", "iD": "783"}
+    - slot{"idType": "customer"}
+    - slot{"iD": "783"}
+    - utter_order_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* details{"idType": "ticket", "iD": "273"}
+    - slot{"idType": "ticket"}
+    - slot{"iD": "273"}
     - utter_ticket_details
-    - slot{"ticketId": null}
+    - slot{"iD": null}
+    - slot{"idType": null}
 * word_meaning{"query": "volcano"}
     - slot{"query": "volcano"}
     - utter_word_meaning
     - slot{"query": "volcano"}
     - export
+    
 ## Generated Story 2865882562750618852
-* order_details{"query": "know a order detail"}
-    - slot{"query": "know a order detail"}
+*details[idType=order]
     - utter_ask_orderId
+*details[iType=order,iD=472]
+    - utter_order_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+*details[idType=ticket]
+    - utter_ask_ticketId
+*details[idType=ticket,iD=453]
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+*details[idType=customer]
+    - utter_ask_customerId
+*details[idType=customer,iD=121]
+    - utter_customer_details
+    - slot{"iD": null}
+    - slot{"idType": null}
 * smalltalk.greetings.bye
     - utter_smalltalk.greetings.bye
     - export
-## Generated Story 8090788600899997824
-* smalltalk.greetings.hello
-    - utter_smalltalk.greetings.hello
-* order_details{"orderId": "14"}
-    - slot{"orderId": "14"}
+    
+## Generated Story 1898075721670813957
+* details{"iD": "234"}
+    - slot{"iD": "234"}
+    - utter_ask_idType
+* details{"idType": "customer"}
+    - slot{"idType": "customer"}
+    - utter_customer_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* details{"idType": "order"}
+    - slot{"idType": "order"}
+    - utter_ask_orderId
+* details{"iD": "362"}
+    - slot{"iD": "362"}
     - utter_order_details
-    - slot{"orderId": null}
-## Generated Story 3852445592793712920
-* ticket_details
-    - utter_ask_tid
-* ticket_details{"orderId": "234"}
-    - slot{"orderId": "234"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
-* ticket_details{"orderId": "66"}
-    - slot{"orderId": "66"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
+    - slot{"iD": null}
+    - slot{"idType": null}
     - export
+    
+## Generated Story -1177223172556933666
+* details{"idType": "order", "iD": "241"}
+    - slot{"idType": "order"}
+    - slot{"iD": "241"}
+    - utter_order_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* details{"idType": "customer", "iD": "783"}
+    - slot{"idType": "customer"}
+    - slot{"iD": "783"}
+    - utter_order_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* details{"idType": "ticket", "iD": "273"}
+    - slot{"idType": "ticket"}
+    - slot{"iD": "273"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+    - export
+
+## Generated Story -7569884815734624802
+* details{"idType": "customer", "iD": "153"}
+    - slot{"idType": "customer"}
+    - slot{"iD": "153"}
+    - utter_customer_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* details{"iD": "14"}
+    - slot{"iD": "14"}
+    - utter_ask_idType
+* details{"idType": "order"}
+    - slot{"idType": "order"}
+    - utter_order_details
+    - slot{"iD": null}
+    - slot{"idType": null}
 
 ## story 00
 * translate_data
@@ -571,12 +627,6 @@
     - utter_smalltalk.agent.chatbot
 * smalltalk.agent.occupation
     - utter_smalltalk.agent.occupation
-* smalltalk.agent.occupation
-    - utter_smalltalk.agent.occupation
-* smalltalk.agent.occupation
-    - utter_smalltalk.agent.occupation
-* smalltalk.agent.can_you_help
-    - utter_smalltalk.agent.can_you_help
 * smalltalk.agent.can_you_help
     - utter_smalltalk.agent.can_you_help
 * smalltalk.agent.boss
@@ -679,36 +729,6 @@
     - utter_weather_details
     - slot{"location": "delhi's"}
 
-## Generated Story -6256296179069674482
-* smalltalk.greetings.hello
-    - utter_smalltalk.greetings.hello
-* ticket_details
-    - utter_ask_tid
-* ticket_details{"orderId": "234"}
-    - slot{"orderId": "234"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
-* customer_details{"userId": "be6746mar23"}
-    - slot{"userId": "be6746mar23"}
-    - utter_customer_details
-    - slot{"userId": "be6746mar23"}
-* ticket_details{"orderId": "66"}
-    - slot{"orderId": "66"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
-* word_meaning{"query": "life"}
-    - slot{"query": "life"}
-    - utter_word_meaning
-    - slot{"query": "life"}
-* ticket_details{"orderId": "123"}
-    - slot{"orderId": "123"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
-* ticket_details{"orderId": "423"}
-    - slot{"orderId": "423"}
-    - utter_ticket_details
-    - slot{"ticketId": null}
-    - export
     
 ## Generated Story 6536596686316661345
 * smalltalk.greetings.hello
@@ -743,4 +763,131 @@
     - slot{"query": "life"}
     - utter_word_meaning
     - slot{"query": "life"}
+    - export
+
+## Generated Story -4702572233000900618
+* smalltalk.greetings.hello
+    - utter_smalltalk.greetings.hello
+* smalltalk.agent.acquaintance
+    - utter_smalltalk.agent.acquaintance
+* smalltalk.agent.residence
+    - utter_smalltalk.agent.residence
+* smalltalk.agent.acquaintance
+    - utter_smalltalk.agent.acquaintance
+* smalltalk.greetings.whatsup
+    - utter_smalltalk.greetings.whatsup
+* smalltalk.user.bored
+    - utter_smalltalk.user.bored
+* weather_details{"location": "chennai tomorrow"}
+    - slot{"location": "chennai tomorrow"}
+    - utter_weather_details
+    - slot{"location": "chennai tomorrow"}
+* translate_data{"word": "crow", "language": "tamil"}
+    - slot{"word": "crow"}
+    - slot{"language": "tamil"}
+    - utter_translate_data
+* smalltalk.appraisal.good
+    - utter_smalltalk.appraisal.good
+* smalltalk.agent.birth_date
+    - utter_smalltalk.agent.birth_date
+* smalltalk.agent.funny
+    - utter_smalltalk.agent.funny
+* details{"idType": "ticket", "iD": "234"}
+    - slot{"idType": "ticket"}
+    - slot{"iD": "234"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* details{"idType": "ticket"}
+    - slot{"idType": "ticket"}
+    - utter_ask_ticketId
+* details{"iD": "66"}
+    - slot{"iD": "66"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* smalltalk.dialog.hold_on
+    - utter_smalltalk.dialog.hold_on
+* smalltalk.dialog.i_do_not_care
+    - utter_smalltalk.dialog.i_do_not_care
+* smalltalk.user.busy
+    - utter_smalltalk.user.busy
+* details{"iD": "153"}
+    - slot{"iD": "153"}
+    - utter_ask_idType
+* details{"idType": "customer"}
+    - slot{"idType": "customer"}
+    - utter_customer_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* details{"idType": "order", "iD": "14"}
+    - slot{"idType": "order"}
+    - slot{"iD": "14"}
+    - utter_order_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* word_meaning{"query": "life"}
+    - slot{"query": "life"}
+    - utter_word_meaning
+    - slot{"query": "life"}
+* details{"idType": "ticket", "iD": "234"}
+    - slot{"idType": "ticket"}
+    - slot{"iD": "234"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* smalltalk.appraisal.thank_you
+    - utter_smalltalk.appraisal.thank_you
+* smalltalk.greetings.bye
+    - utter_smalltalk.greetings.bye
+    - export
+    
+ ## Generated Story 1803862044791158966
+* smalltalk.greetings.hello
+    - utter_smalltalk.greetings.hello
+* smalltalk.greetings.how_are_you
+    - utter_smalltalk.greetings.how_are_you
+* smalltalk.agent.acquaintance
+    - utter_smalltalk.agent.acquaintance
+* smalltalk.agent.can_you_help
+    - utter_smalltalk.agent.can_you_help
+* smalltalk.agent.can_you_help
+    - utter_smalltalk.agent.can_you_help
+* details{"idType": "ticket"}
+    - slot{"idType": "ticket"}
+    - utter_ask_ticketId
+* details{"iD": "234"}
+    - slot{"iD": "234"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* smalltalk.confirmation.yes
+    - utter_smalltalk.confirmation.yes
+* details{"iD": "234"}
+    - slot{"iD": "234"}
+    - utter_ask_idType
+* details{"idType": "ticket"}
+    - slot{"idType": "ticket"}
+    - utter_ticket_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+    - export
+
+## Generated Story -4668603640186636894
+* smalltalk.greetings.hello
+    - utter_smalltalk.greetings.hello
+* smalltalk.greetings.how_are_you
+    - utter_smalltalk.greetings.how_are_you
+* details{"iD": "183"}
+    - slot{"iD": "183"}
+    - utter_ask_idType
+* details{"idType": "customer"}
+    - slot{"idType": "customer"}
+    - utter_customer_details
+    - slot{"iD": null}
+    - slot{"idType": null}
+* smalltalk.appraisal.thank_you
+    - utter_smalltalk.appraisal.thank_you
+* smalltalk.greetings.bye
+    - utter_smalltalk.greetings.bye
     - export
