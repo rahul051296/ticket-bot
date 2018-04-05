@@ -1,12 +1,12 @@
 slots:
-  userId:
+  iD:
     type: text
-  orderId:
-    type: text
-  query:
-    type: text
-  ticketId:
-    type: text
+  idType:
+    type: categorical
+    values:
+      - ticket
+      - customer
+      - order
   word:
     type: text
   language:
@@ -16,18 +16,14 @@ slots:
 
 
 entities:
- - userId
- - orderId
- - ticketId
- - query
- - language
- - location
- - word
+  - iD
+  - idType
+  - language
+  - location
+  - word
 
 intents:
-  - ticket_details
-  - customer_details
-  - order_details
+  - details
   - weather_details
   - word_meaning
   - translate_data
@@ -52,6 +48,7 @@ intents:
   - smalltalk.agent.happy
   - smalltalk.agent.hobby
   - smalltalk.agent.hungry
+  - smalltalk.agent.information
   - smalltalk.agent.marry_user
   - smalltalk.agent.my_friend
   - smalltalk.agent.occupation
@@ -119,7 +116,11 @@ intents:
   - smalltalk.confirmation.no
 
 templates:
-    utter_ask_tid:
+    utter_ask_idType:
+        - 'Is it ticket id or customer id or order id?'
+        - 'Please be more specific id(ticket or customer or order)'
+
+    utter_ask_ticketId:
         - 'Ticket id please'
         - 'Would you mind telling the ticket id'
         - 'Providing ticket id will make my job easy'
@@ -137,14 +138,15 @@ templates:
         - 'Sure please tell the order id'
         - 'What is the order id?'
    
-    utter_ask_userId:
-        - 'User id please'
-        - 'Would you mind telling the user id'
-        - 'Providing user id will make my job easy'
-        - 'Please provide the user id'
-        - 'Enter the id of the user'
-        - 'Sure please tell the user id'
-        - 'What is the user id?'
+    utter_ask_customerId:
+        - 'Customer id please'
+        - 'Would you mind telling the customer id'
+        - 'Providing customer id will make my job easy'
+        - 'Please provide the customer id'
+        - 'Enter the id of the customer'
+        - 'Sure please tell the customer id'
+        - 'What is the customer id?'
+
     utter_smalltalk.agent.acquaintance:
         - "I'm a virtual agent"
         - "Think of me as a virtual agent."
@@ -247,6 +249,8 @@ templates:
     utter_smalltalk.agent.hungry:
         - "Hungry for knowledge."
         - "I just had a byte. Ha ha. Get it? b-y-t-e."
+
+    utter_smalltalk.agent.information:
         
     utter_smalltalk.agent.marry_user:
         - "I'm afraid I'm too virtual for such a commitment."
@@ -597,8 +601,9 @@ actions:
   - actions.GetTranslation
   - actions.GetWeatherDetails
   - actions.GetWordMeaning
-  - utter_ask_userId
-  - utter_ask_tid
+  - utter_ask_idType
+  - utter_ask_customerId
+  - utter_ask_ticketId
   - utter_ask_orderId
   - utter_smalltalk.agent.acquaintance
   - utter_smalltalk.agent.age

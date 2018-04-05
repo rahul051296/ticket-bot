@@ -21,12 +21,12 @@ def getTicketStatus(ticketId):
         return response
 
 
-def getCustomerDetails(userId):
+def getCustomerDetails(customerId):
     global response
     with open('customer.json') as json_data:
         data = json.load(json_data)
         for d in data:
-            if userId == d.get("_id"):
+            if customerId == d.get("_id"):
                 name = d.get('name')
                 phone = d.get('phone')
                 email = d.get('email')

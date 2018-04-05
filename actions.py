@@ -14,15 +14,13 @@ class GetCustomerDetails(Action):
         return 'utter_customer_details'
 
     def run(self, dispatcher, tracker, domain):
-        message = "No user found"
-        user = str(tracker.get_slot('userId'))
-        response = getCustomerDetails(user)
-        if response:
-            message = response
-            dispatcher.utter_message(message)
+        customerId = str(tracker.get_slot('iD'))
+        message = getCustomerDetails(customerId)
+        if message == "None":
+            dispatcher.utter_message("Customer not found")
         else:
             dispatcher.utter_message(message)
-        return [SlotSet('userId', tracker.get_slot('userId'))]
+        return [SlotSet('iD', None), SlotSet('idType', None)]
 
 
 class GetTicketDetails(Action):
@@ -30,12 +28,13 @@ class GetTicketDetails(Action):
         return 'utter_ticket_details'
 
     def run(self, dispatcher, tracker, domain):
-        ticketId = str(tracker.get_slot('ticketId'))
-        if ticketId == 'None':
-            ticketId = str(tracker.get_slot('orderId'))
+        ticketId = str(tracker.get_slot('iD'))
         message = getTicketStatus(ticketId)
-        dispatcher.utter_message(message)
-        return [SlotSet('ticketId', None)]
+        if message == "None":
+            dispatcher.utter_message("No ticket exists with that id")
+        else:
+            dispatcher.utter_message(message)
+        return [SlotSet('iD', None), SlotSet('idType', None)]
 
 
 class GetOrderDetails(Action):
@@ -43,12 +42,13 @@ class GetOrderDetails(Action):
         return 'utter_order_details'
 
     def run(self, dispatcher, tracker, domain):
-        orderId = str(tracker.get_slot('orderId'))
-        if orderId == 'None':
-            orderId = str(tracker.get_slot('tId'))
+        orderId = str(tracker.get_slot('iD'))
         message = getOrderDetails(orderId)
-        dispatcher.utter_message(message)
-        return [SlotSet('orderId', None)]
+        if message == "None":
+            dispatcher.utter_message("Order id does not exist")
+        else:
+            dispatcher.utter_message(message)
+        return [SlotSet('iD', None), SlotSet('idType', None)]
 
 
 class GetWeatherDetails(Action):
