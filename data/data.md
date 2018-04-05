@@ -87,6 +87,7 @@
 - What is the weather report of [kolkata](location)
 - what about weather in [tanjore](location)
 - what is the temperature in [navi mumbai](location)
+- weather in [london](location)
 
 ## intent:word_meaning
 - get me the meaning of [life](query)
@@ -108,6 +109,8 @@
 - [bottle](query) word meaning
 - [ticket](query) meaning
 - meaning for word [dog](query)
+- meaning of [thank you](query)
+- what is the meaning of [come again](query)
 
 ## intent:translate_data
 - [dog](word) in [tamil](language)
@@ -127,7 +130,8 @@
 - what does [edgy](word) mean in [French](language)?
 - what is the meaning of [agitated](word) in [Kannada](language)
 - what is the translation of [worried](word) in [Tamil](language)?
-- what is the meaning of [cool](query) in [Spanish](query)?
+- what is the meaning of [cool](word) in [Spanish](language)?
+- what is [monster](word) in [hindi](language)?
 
 ## intent:smalltalk.agent.acquaintance
 - tell me about your personality

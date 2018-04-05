@@ -50,7 +50,7 @@ def searchRestaurants(area, cuisine):
     restaurants = content.find_all('div', attrs={'class': 'dbg0pd'})
     for restaurant in restaurants:
         res.append(restaurant.text)
-        
+
     return res
 
 
