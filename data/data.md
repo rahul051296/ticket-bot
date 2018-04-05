@@ -1110,6 +1110,7 @@
 - what did you blabber?
 - don't blabber
 - you're blabbering
+- don't babble 
 
 ## intent:smalltalk.dialog.wrong
 - that was wrong

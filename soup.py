@@ -38,5 +38,21 @@ def translateGoogle(word, language):
     return translated
 
 
+def searchRestaurants(area, cuisine):
+    res = []
+    s = requests.Session()
+    s.trust_env = False
+    s.headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36'
+    r = s.get('https://www.google.co.in/search?q={}+restaurants+in+{}'.format(cuisine, area))
+    data = r.text
+    soup = BeautifulSoup(data, "html.parser")
+    content = soup.find('div', attrs={'class': 'ccBEnf'})
+    restaurants = content.find_all('div', attrs={'class': 'dbg0pd'})
+    for restaurant in restaurants:
+        res.append(restaurant.text)
+        
+    return res
+
+
 if __name__ == '__main__':
-    print(searchWordMeaning("life"))
+    print(searchRestaurants("", "veg"))
