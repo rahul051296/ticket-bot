@@ -15,7 +15,7 @@ input.addEventListener("keyup", function (event) {
 });
 
 window.onload = function(){
-    fetch('http://localhost:5004/status',{
+    fetch('http://10.149.93.224:5004/status',{
         method:'GET'
     })
     .then(function(response){
@@ -62,7 +62,7 @@ function respond(msg) {
         query: msg,
         id: id
     }
-    fetch(`http://localhost:5004/respond`, {
+    fetch(`http://10.149.93.224:5004/respond`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

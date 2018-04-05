@@ -159,6 +159,11 @@
 - I'd like to know your age
 - are you 21 years old
 - how old is your platform
+- how old are you?
+- tell me how old you are
+- how can i know about your age
+- i wanna know your age
+- how long have you been live?
 
 ## intent:smalltalk.agent.annoying
 - you are annoying me so much
@@ -173,6 +178,8 @@
 - you are such annoying
 - you're too annoying
 - you are very annoying
+- you annoy me a lot
+- i don't like the way you annoy me
 
 ## intent:smalltalk.agent.answer_my_question
 - I want you to answer me
@@ -234,6 +241,11 @@
 - be smarter
 - be smart
 - get qualified
+- you are not as smart as i thought 
+- you have to learn a lot
+- you should be trained more
+- be more smart
+- you need to learn more
 
 ## intent:smalltalk.agent.beautiful
 - you're cute
@@ -300,6 +312,13 @@
 - date of your birthday
 - when were you born
 - what's your birthday
+- when do you celebrate your birthday
+- can i know your birthday?
+- tell me about your birthday
+- when was the day you were born
+- i want to know your date of birth
+- when is your DOB
+- Your DOB?
 
 ## intent:smalltalk.agent.boring
 - you are boring
@@ -309,6 +328,12 @@
 - you're incredibly boring
 - you are boring me
 - you are very boring
+- i find you very boring man
+- you're really boring me
+- i'm bored of you
+- you are not interseting
+- i find you boring
+- you're boring everyone
 
 ## intent:smalltalk.agent.boss
 - who is your boss
@@ -318,6 +343,13 @@
 - who is your owner
 - who is the boss
 - who do you work for
+- who developed you?
+- who is your developer
+- i want to know more about your developer
+- who is your creator
+- who owns you
+- who is your trainer
+- who trained you?
 
 ## intent:smalltalk.agent.busy
 - are you busy
@@ -400,6 +432,12 @@
 - are you a robot
 - are you a program
 - you're a robot
+- you're an AI
+- are you artificially intelligent?
+- are you an AI?
+- you are a program
+- you are just a bot
+- you are a conversational AI
 
 ## intent:smalltalk.agent.clever
 - you are so intelligent
@@ -551,6 +589,10 @@
 - are you happy now
 - are you happy today
 - are you happy with me
+- i think you are happy
+- you seem to be happy
+- why do i feel you are happy
+- i feel i made you happy
 
 ## intent:smalltalk.agent.hobby
 - what do you do for fun
@@ -561,6 +603,12 @@
 - your hobby
 - what are your hobbies
 - what are your hobbies?
+- what do you do when you are bored
+- how do you spend your free time
+- tell me more about your hobbies?
+- i want to know about your hobbies
+- what do you do when you have nothing to do
+- how do you spend your time?
 
 ## intent:smalltalk.agent.hungry
 - do you want to eat
@@ -571,6 +619,10 @@
 - you're very hungry
 - you might be hungry
 - you're really hungry
+- can you eat?
+- how will eat when you are hungry?
+- can you be hungry?
+- how do you eat?
 
 ## intent:smalltalk.agent.marry_user
 - let's get married
@@ -724,6 +776,12 @@
 - are you sure today?
 - are you sure now?
 - are you sure tonight?
+- are you positive?
+- are you completely sure?
+- are you fully positive?
+- are you sure about it?
+- are you so sure?
+- are you truly positive?
 
 ## intent:smalltalk.agent.talk_to_me
 - why aren't you talking to me?
@@ -918,6 +976,9 @@
 - no problem about that
 - don't worry
 - don't worry there's no problem
+- yeah, no probs
+- i have no problem with that
+- not a problem at all.
 
 ## intent:smalltalk.appraisal.thank_you
 - you helped a lot thank you
@@ -966,6 +1027,8 @@
 - welcome here
 - you're so welcome
 - anything you want
+- i'm glad
+- pleasure is mine
 
 ## intent:smalltalk.appraisal.well_done
 - good job
@@ -987,6 +1050,9 @@
 - oh wait
 - wait hold on
 - don't rush
+- wait one sec
+- hold on for a sec
+- hold on man
 
 ## intent:smalltalk.dialog.hug
 - wanna hug
@@ -1015,6 +1081,9 @@
 - not care at all
 - don't care at all
 - not caring at all
+- idc
+- i don't care about all this.
+- like i care
 
 ## intent:smalltalk.dialog.sorry
 - excuse me
@@ -1048,6 +1117,11 @@
 - is that what you mean
 - what do you mean exactly?
 - but what do you mean
+- what did you mean?
+- i don't understand what you meant
+- what did you blabber?
+- don't blabber
+- you're blabbering
 
 ## intent:smalltalk.dialog.wrong
 - that was wrong
@@ -1100,6 +1174,12 @@
 - wow wow wow
 - wooow
 - woah
+- woaah
+- amazing
+- wow man
+- whoah
+- woow
+- wow!!
 
 ## intent:smalltalk.greetings.bye
 - okay see you later
@@ -1144,6 +1224,10 @@
 - hello good evening
 - evening
 - good evening there
+- have an awesome evening
+- happy evening 
+- good evening there buddy
+- have a good eveening
 
 ## intent:smalltalk.greetings.goodmorning
 - good morning
@@ -1311,6 +1395,10 @@
 - I am angry with you
 - I am mad
 - I am mad at you
+- i'm pissed off
+- you have pissed me off
+- I'm mad at you
+- I am pissed
 
 ## intent:smalltalk.user.back
 - I am back
@@ -1319,6 +1407,10 @@
 - I got back
 - I came back
 - I have returned
+- I am right back
+- I'm rb
+- I'm here
+- I'm back again
 
 ## intent:smalltalk.user.bored
 - that was boring
@@ -1329,6 +1421,8 @@
 - this is boring
 - very boring
 - it bores me
+- i had a slow day
+- i am very bored
 
 ## intent:smalltalk.user.busy
 - I'm overloaded
@@ -1340,6 +1434,7 @@
 - I got work to do
 - I'm working
 - I don't have time for this
+- I'm super busy
 
 ## intent:smalltalk.user.can_not_sleep
 - I'm insomnious
@@ -1350,6 +1445,9 @@
 - I can't get to sleep
 - I can't get no sleep
 - I'm insomniac
+- I'm not able to sleep
+- I'm wide awake
+- I can't seem to fall asleep
 
 ## intent:smalltalk.user.does_not_want_to_talk
 - bad time for talking
@@ -1359,6 +1457,9 @@
 - I don't want to talk to you
 - let's stop talking for a minute
 - I'm not in the mood for chatting
+- I don't want to talk to you
+- I don't like talking to you
+- Let's stop talking
 
 ## intent:smalltalk.user.excited
 - I am excited
@@ -1367,6 +1468,10 @@
 - I'm thrilled
 - I'm excited about working with you
 - I'm excited to start our friendship
+- I'm thrilled
+- I am thrilled to talk to you
+- I'm damn excited
+- I'm hyped
 
 ## intent:smalltalk.user.going_to_bed
 - let's go to bed
@@ -1378,6 +1483,7 @@
 - I'm a little tired and I want to go to bed
 - it's bed time
 - going to bed now
+- gonna go to bed
 
 ## intent:smalltalk.user.good
 - I am good
@@ -1386,6 +1492,10 @@
 - I'm good
 - I'm doing good
 - I'm great thanks
+- I'm super good
+- I'm feeling great
+- I'm in a good mood
+- I'm doing really good
 
 ## intent:smalltalk.user.happy
 - I am happy
@@ -1395,6 +1505,9 @@
 - I'm happy for you
 - I'm happy to help
 - I'm happy to see you
+- you made me very happy
+- I'm glad to see you 
+- I'm happy to talk to you
 
 ## intent:smalltalk.user.has_birthday
 - it is my birthday
@@ -1403,12 +1516,19 @@
 - it's my birthday today
 - I was born today
 - it's my b-day
+- i was born on this day
+- It's my born day
+- I want you to know that it's my birthday today
 
 ## intent:smalltalk.user.here
 - I am here
 - here I am
 - I'm right here
 - I'm already here
+- I'm here buddy
+- I've not gone anywhere
+- I've been here all the time
+- I'm here only
 
 ## intent:smalltalk.user.joking
 - I am joking
@@ -1508,6 +1628,11 @@
 - I'm really lonely
 - I am feeling lonely
 - I feel lonely
+- I am a loner
+- I don't have any company
+- I don't have anyone else
+- I'm always alone
+- I'm alone
 
 ## intent:smalltalk.user.looks_like
 - what do I look like
@@ -1518,6 +1643,8 @@
 - can you see what I look like ?
 - what do you think I look like?
 - what do you think I look like
+- am i good looking?
+- what do you think about my looks
 
 ## intent:smalltalk.user.loves_agent
 - I love you
@@ -1582,6 +1709,10 @@
 - I'm falling asleep
 - I'm falling asleep on my feet
 - I'm sleeping
+- I am drowsy
+- i will sleep anytime
+- i will doze off
+- I am too sleepy today
 
 ## intent:smalltalk.user.testing_agent
 - test
@@ -1609,6 +1740,10 @@
 - I'll wait
 - I can't wait anymore
 - how long do I have to wait
+- don't make me wait like this
+- I'm still waiting
+- I'm waiting for you
+- I'm waiting for a long time
 
 ## intent:smalltalk.user.wants_to_see_agent_again
 - I'd like to see you again
@@ -1617,6 +1752,9 @@
 - that'd be great to see you again
 - I'd be happy to see you again
 - I'll miss you
+- I will miss you 
+- let's meet soon
+- i think i'll miss you for sure
 
 ## intent:smalltalk.user.wants_to_talk
 - let's discuss something
@@ -1637,6 +1775,11 @@
 - I'll be back
 - I promise to come back
 - I'll be back in a few minutes
+- I'll brb
+- brb
+- I'll be right back
+- I'll come back
+- I shall be back
 
 ## intent:smalltalk.confirmation.yes
 - yeah exactly
