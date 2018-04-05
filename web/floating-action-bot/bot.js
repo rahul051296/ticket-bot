@@ -15,7 +15,7 @@ input.addEventListener("keyup", function (event) {
 });
 
 window.onload = function(){
-    fetch('http://localhost:5004/status',{
+    fetch('http://192.168.1.7:5004/status',{
         method:'GET'
     })
     .then(function(response){
@@ -62,7 +62,7 @@ function respond(msg) {
         query: msg,
         id: id
     }
-    fetch(`http://localhost:5004/respond`, {
+    fetch(`http://192.168.1.7:5004/respond`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -92,18 +92,21 @@ function respond(msg) {
                 li.appendChild(t)
                 ul.appendChild(li)
                 chat.scrollTop = chat.scrollHeight;
-                fetch(`http://10.149.93.224:5004/respond`, {
+                fetch(`http://192.168.1.7:5004/respond`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(data)
+                    body: JSON.stringify({
+                        query: "hi",
+                        id: id
+                    })
                 })
                     .then(function (response) {
                         return response.json();
                     })
                     .then(function (data) {
-                        console.log(data);
+                        console.log("Handled");
                     })
             }
 
@@ -112,8 +115,8 @@ function respond(msg) {
             let li = document.createElement('li');
             let t = document.createTextNode("I'm having some technical issues. Try again later :)");
             li.className = 'responder';
-            li.appendChild(t)
-            ul.appendChild(li)
+            li.appendChild(t);
+            ul.appendChild(li);
             chat.scrollTop = chat.scrollHeight;
         });
 
@@ -128,17 +131,22 @@ function voice() {
 }
 
 function listen(){
+    let mic = document.getElementById('mic')
+    mic.style.color = 'red';
+    mic.className = 'animated pulse infinite';
     let hear = new webkitSpeechRecognition();
     hear.continuous = false;
     hear.lang = 'en-IN';
-    hear.start()
+    hear.start();
 
     hear.onresult = function(e){
+        mic.style.color = 'black';
+        mic.className = '';
         userVoiceText = e.results[0][0].transcript;
         hear.stop();
         let li = document.createElement('li');
         li.appendChild(document.createTextNode(userVoiceText));
-        li.className = "sender"
+        li.className = "sender";
         ul.appendChild(li);
         respond(userVoiceText);
         document.getElementById('chat-input').value = "";

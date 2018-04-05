@@ -1424,6 +1424,8 @@
 - then what's up
 - what's shaking
 - wassup
+- what are you doing?
+- what are you doing
 - what is going on
 - what is happening
 - what's cracking
