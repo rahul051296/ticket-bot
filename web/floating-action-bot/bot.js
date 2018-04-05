@@ -87,11 +87,24 @@ function respond(msg) {
             }
             else {
                 let li = document.createElement('li');
-                let t = document.createTextNode("Sorry, I don't understand your question, try asking me in an other way");
+                let t = document.createTextNode("Sorry, I'm having trouble understanding you, try asking me in an other way");
                 li.className = 'responder';
                 li.appendChild(t)
                 ul.appendChild(li)
                 chat.scrollTop = chat.scrollHeight;
+                fetch(`http://10.149.93.224:5004/respond`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        console.log(data);
+                    })
             }
 
         })
@@ -112,4 +125,23 @@ function voice() {
         return true;
     else
         return false;
+}
+
+function listen(){
+    let hear = new webkitSpeechRecognition();
+    hear.continuous = false;
+    hear.lang = 'en-IN';
+    hear.start()
+
+    hear.onresult = function(e){
+        userVoiceText = e.results[0][0].transcript;
+        hear.stop();
+        let li = document.createElement('li');
+        li.appendChild(document.createTextNode(userVoiceText));
+        li.className = "sender"
+        ul.appendChild(li);
+        respond(userVoiceText);
+        document.getElementById('chat-input').value = "";
+        chat.scrollTop = chat.scrollHeight;
+    }
 }

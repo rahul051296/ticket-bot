@@ -34,12 +34,13 @@
                 <div id="bottom"></div>
             </div>
             <section class="row" id="input">
-                <div class="col-9 col-md-10" style="padding-right: 0">
-                    <input type="text" id="chat-input" placeholder="Enter your message" class="form-control">
+                <div class="col-9 col-md-10" style="padding-right: 0" id="input-box">
+                    <input type="text" id="chat-input" placeholder="Enter your message" class="form-control" />
+                    <span id="mic"><i class="fas fa-microphone" onclick="listen()"></i></span>
                 </div>
                 <div class="col-3 col-md-2" style="padding-left: 5px">
                     <button id="btn" class="btn btn-primary btn-block" id="btn" onclick="send()">
-                        <i class="fas fa-paper-plane"></i>
+                        <i class="fas fa-paper-plane" ></i>
                     </button>
                 </div>
             </section>
@@ -50,6 +51,7 @@
         <div id="fab-close" class="shadow" onclick="closechat()">
             <i class="fas fa-1x fa-envelope-open"></i>
         </div>
+
     </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

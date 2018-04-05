@@ -75,6 +75,11 @@ h6{
     margin-left: 0px;
     margin-right: 0px;
 }
+#mic{
+    position: absolute;
+    left: 90%;
+    bottom: 10.5%;
+}
 #fab {
     z-index: 4;
     position: fixed;

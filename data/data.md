@@ -74,6 +74,9 @@
 - temperature in [new jersey](location)
 - [delhi's](location) temperature
 - [chennai's](location) weather
+- weather in [toronto](location)
+- weather in [kingston](location)
+- what is the weather in [new south wales](location)
 - [washington dc](location) weather
 - i want to know the weather details of weather in [paris](location)
 - i want to know the [barcelona's](location)weather details 
