@@ -24,7 +24,7 @@
 - ok then what about [563](iD)
 - wanna some info about [ticket](idType)
 - what about my [ticket](idType)
-- [ticket](idType)s
+- [ticket](idType)
 - [ticket](idType) [462](iD) details
 - get [ticket](idType) [563](iD) information
 - i want some info about [365](iD) [ticket](idType)
@@ -92,17 +92,17 @@
 - [new delhi's](location) climate
 - [new jersey's](location) weather
 - i want to know the weather details of weather in [paris](location)
-- i want to know the [barcelona's](location)weather details 
-- i need [new delhi's](location)temperature
+- i want to know the [barcelona's](location) weather details 
+- i need [vijayawada's](location) temperature
 - what is the temperature in [new delhi](location)
-- what is infoather in [washington dc](location)
+- what is weather in [washington dc](location)
 - what is [new york's](location) weather 
 - tell me [srinagar](location) temperature
 - tell me [kochi](location) temperature
 - tell me the temperature in [lucknow](location)
 - What is the weather report of [kolkata](location)
 - what about weather in [tanjore](location)
-- what is the temperature in [navi mumbai](location)
+- what is the temperature in [hyderabad](location)
 - weather in [london](location)
 - location is [chennai](location)
 - location is [new york](location)
@@ -111,12 +111,12 @@
 - in [chennai](location)
 - in [navi mumbai](location)
 - how's the climate
-- how is cliamte
+- how is climate
 - how about temperature
 - how's weather
 - how about the weather
 - location is [new delhi](location)
-- location is[pune](location)
+- location is [pune](location)
 
 ## intent:word_meaning
 - get me the meaning of [life](query)
@@ -124,7 +124,7 @@
 - meaning for [computer](query)
 - meaning for the word [rat](query)
 - what is the meaning of [keyboard](query)
-- find meaing for word [mountain](query)
+- find meaning for word [mountain](query)
 - what is the meaning of [tumbling](query)?
 - meaning of [falling](query)
 - what is the meaning of [columns](query)
@@ -143,11 +143,11 @@
 - meaning for word [dog](query)
 - meaning of [thank you](query)
 - what is the meaning of [come again](query)
-- meaning for[water](query)
-- meaning for[bottle](query)
-- meaning for[water bottle](query)
-- meaning for[eye balls](query)
-- meaning for[distilled water](query)
+- meaning for [water](query)
+- meaning for [bottle](query)
+- meaning for [water bottle](query)
+- meaning for [eye balls](query)
+- meaning for [distilled water](query)
 
 ## intent:translate_data
 - [dog](word) in [tamil](language)
@@ -677,6 +677,7 @@
 - I want to marry you
 - you are my wife
 - be my husband
+- will you marry me?
 
 ## intent:smalltalk.agent.my_friend
 - I want to have a friend like you
@@ -727,6 +728,7 @@
 - your office location?
 - where is your office located?
 - what is your work?
+- place where you work?
 
 ## intent:smalltalk.agent.origin
 - were you born here
@@ -749,6 +751,9 @@
 - are you ready tonight?
 - were you ready?
 - have you been ready?
+- ready?
+- ready now?
+- you ready?
 
 ## intent:smalltalk.agent.real
 - you are real
