@@ -1831,6 +1831,8 @@
 - I'll be right back
 - I'll come back
 - I shall be back
+- I assure that i will be back soon
+- I would be back man
 
 ## intent:smalltalk.confirmation.yes
 - yeah exactly
@@ -1843,6 +1845,13 @@
 - ya
 - ok yes
 - yes it is
+- yep
+- yew
+- yeah 
+- yeah fine
+- yea fine
+- yep okay
+- fine okay
 
 ## intent:smalltalk.confirmation.cancel
 - nevermind forget about it
@@ -1855,9 +1864,20 @@
 - cancel everything
 - cancel that one
 - i want to cancel
+- cancel it
+- cancelled
+- cancel it now
+- don't want cancel
+- cancel soon
+- shall stand cancelled
 
 ## intent:smalltalk.confirmation.no
 - don't
+- don't want
+- need not
+- don't come 
+- never help
+- never
 - not needed
 - of course not
 - never
@@ -1866,4 +1886,16 @@
 - absolutely no
 - no forget
 - do not
+- no thanks
+- no don't want
 - sorry no
+- don't want your help
+- I don't you help
+- I don't want your assistance
+- get out goodbye
+- i do not want your help
+- i don't need your help
+- i don't want your help
+- i am not okay with your help
+- don't want
+- do not
