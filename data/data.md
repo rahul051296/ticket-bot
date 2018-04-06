@@ -678,6 +678,7 @@
 - you are my wife
 - be my husband
 - will you marry me?
+- any idea of marrying me?
 
 ## intent:smalltalk.agent.my_friend
 - I want to have a friend like you
@@ -729,6 +730,7 @@
 - where is your office located?
 - what is your work?
 - place where you work?
+- your work place?
 
 ## intent:smalltalk.agent.origin
 - were you born here
@@ -754,6 +756,7 @@
 - ready?
 - ready now?
 - you ready?
+- being ready?
 
 ## intent:smalltalk.agent.real
 - you are real
@@ -862,6 +865,7 @@
 - are you still there
 - you are here?
 - you still there?
+- you there?
 - are you still here
 
 ## intent:smalltalk.appraisal.bad
@@ -1087,7 +1091,9 @@
 - great work
 - amazing work
 - bravo
+- fantastic
 - good work
+- zing zing amazing
 
 ## intent:smalltalk.dialog.hold_on
 - wait a second
@@ -1277,6 +1283,7 @@
 - happy evening 
 - good evening there buddy
 - have a good eveening
+- enjoy the evening
 
 ## intent:smalltalk.greetings.goodmorning
 - good morning
@@ -1387,6 +1394,7 @@
 - pleased to meet you
 - pleasure to meet you
 - pleasure to meet you too
+- happy to meet you
 
 ## intent:smalltalk.greetings.nice_to_see_you
 - it's nice to see you
@@ -1415,6 +1423,10 @@
 - nice talking to you
 - it is nice talking to you
 - how nice it is to talk to you
+- it was great chatting with you
+- nice to talk to you again 
+- It was nice speaking with you
+- It was great to talk to you
 
 ## intent:smalltalk.greetings.whatsup
 - what is on your mind?
@@ -1452,6 +1464,7 @@
 - I am pissed
 
 ## intent:smalltalk.user.back
+- boss in back
 - I am back
 - I'm here again
 - here I am again
@@ -1464,6 +1477,7 @@
 - I'm back again
 
 ## intent:smalltalk.user.bored
+- soo bored
 - that was boring
 - I'm bored
 - bored
@@ -1476,6 +1490,7 @@
 - i am very bored
 
 ## intent:smalltalk.user.busy
+- busy right now
 - I'm overloaded
 - I have no time
 - I'm busy
@@ -1488,7 +1503,7 @@
 - I'm super busy
 
 ## intent:smalltalk.user.can_not_sleep
-- I'm insomnious
+- I'm insomnia's
 - I'm sleepless
 - I can't get any sleep
 - I can't sleep
@@ -1511,6 +1526,7 @@
 - I don't want to talk to you
 - I don't like talking to you
 - Let's stop talking
+- I'm not in a mood to talk
 
 ## intent:smalltalk.user.excited
 - I am excited
@@ -1523,6 +1539,7 @@
 - I am thrilled to talk to you
 - I'm damn excited
 - I'm hyped
+- I'm very excited
 
 ## intent:smalltalk.user.going_to_bed
 - let's go to bed
@@ -1535,6 +1552,7 @@
 - it's bed time
 - going to bed now
 - gonna go to bed
+- time to sleep
 
 ## intent:smalltalk.user.good
 - I am good
@@ -1547,8 +1565,10 @@
 - I'm feeling great
 - I'm in a good mood
 - I'm doing really good
+- good
 
 ## intent:smalltalk.user.happy
+- Feeling happy
 - I am happy
 - I'm happy to see you
 - happy
@@ -1561,6 +1581,7 @@
 - I'm happy to talk to you
 
 ## intent:smalltalk.user.has_birthday
+- You know today it's my bday 
 - it is my birthday
 - I'm celebrating my birthday today
 - today is my birthday
@@ -1570,8 +1591,12 @@
 - i was born on this day
 - It's my born day
 - I want you to know that it's my birthday today
+- yaaaay it is my birthday
 
 ## intent:smalltalk.user.here
+- I'm here
+- here buddy
+- here dude
 - I am here
 - here I am
 - I'm right here
@@ -1592,6 +1617,7 @@
 - just kidding
 - kidding
 - I'm just playing with you
+- LOL 
 
 ## intent:smalltalk.user.likes_agent
 - I like you the way you are
@@ -1696,6 +1722,7 @@
 - what do you think I look like
 - am i good looking?
 - what do you think about my looks
+- Whom do i look like?
 
 ## intent:smalltalk.user.loves_agent
 - I love you
@@ -1708,6 +1735,7 @@
 - loving you
 - you know I love you
 - do you love me ?
+- Love you so much
 
 ## intent:smalltalk.user.misses_agent
 - I miss you
@@ -1717,6 +1745,10 @@
 - I miss you much
 - I missed you
 - I've missed you
+- miss you so much
+- miss you buddy
+- miss you badly
+- miss you :(
 
 ## intent:smalltalk.user.needs_advice
 - what should I do about it
@@ -1744,6 +1776,7 @@
 - what is your advice
 
 ## intent:smalltalk.user.sad
+- I'm in a sad mood
 - I am sad
 - I'm grieving
 - I am depressed
@@ -1753,6 +1786,7 @@
 - I'm having a bad day
 - I want to cry
 - I'm not happy
+- feeling sad
 
 ## intent:smalltalk.user.sleepy
 - I am sleepy
@@ -1764,6 +1798,7 @@
 - i will sleep anytime
 - i will doze off
 - I am too sleepy today
+- feeling too sleepy
 
 ## intent:smalltalk.user.testing_agent
 - test
