@@ -15,7 +15,7 @@ input.addEventListener("keyup", function (event) {
 });
 
 window.onload = function(){
-    fetch('http://192.168.1.7:5004/status',{
+    fetch('http://10.149.93.224:5004/status',{
         method:'GET'
     })
     .then(function(response){
@@ -62,7 +62,7 @@ function respond(msg) {
         query: msg,
         id: id
     }
-    fetch(`http://192.168.1.7:5004/respond`, {
+    fetch(`http://10.149.93.224:5004/respond`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ function respond(msg) {
                 li.appendChild(t)
                 ul.appendChild(li)
                 chat.scrollTop = chat.scrollHeight;
-                fetch(`http://192.168.1.7:5004/respond`, {
+                fetch(`http://10.149.93.224:5004/respond`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

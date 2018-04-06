@@ -124,6 +124,7 @@
 - meaning for [computer](query)
 - meaning for the word [rat](query)
 - what is the meaning of [keyboard](query)
+- find meaning for word [pencil box](query)
 - find meaning for word [mountain](query)
 - what is the meaning of [tumbling](query)?
 - meaning of [falling](query)
@@ -131,6 +132,8 @@
 - what is the meaning of [serenity](query)?
 - what does [tranquility](query) mean?
 - what is the meaning of [peacefullness](query)?
+- what does [organic chemistry](query) mean?
+- what is the meaning of [internal state](query)?
 - [pandemonium](query) means?
 - [ghost rider](query) meaning
 - [lemon spoon](query) meaning
@@ -145,6 +148,8 @@
 - what is the meaning of [come again](query)
 - meaning for [water](query)
 - meaning for [bottle](query)
+- I want to know meaning for [cloud computing](query).
+- meaning of [cloud computing](query).
 - meaning for [water bottle](query)
 - meaning for [eye balls](query)
 - meaning for [distilled water](query)
@@ -1774,6 +1779,9 @@
 - let me test you
 - testing chatbot
 - testing
+- this is just a test
+- you are being tested
+- you're tested
 
 ## intent:smalltalk.user.tired
 - I'm drained
@@ -1784,6 +1792,9 @@
 - I'm worn out
 - I'm getting tired
 - I feel tired
+- I'm so tired
+- I'm completely drained out
+- I'm very tired 
 
 ## intent:smalltalk.user.waits
 - I'm waiting
@@ -1795,6 +1806,8 @@
 - I'm still waiting
 - I'm waiting for you
 - I'm waiting for a long time
+- I'll be waiting for you
+- I'll be waiting
 
 ## intent:smalltalk.user.wants_to_see_agent_again
 - I'd like to see you again
@@ -1806,6 +1819,9 @@
 - I will miss you 
 - let's meet soon
 - i think i'll miss you for sure
+- i'm missing you badly
+- i want to see you again soon
+- let's catch up soon
 
 ## intent:smalltalk.user.wants_to_talk
 - let's discuss something
