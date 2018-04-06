@@ -24,7 +24,7 @@
 - ok then what about [563](iD)
 - wanna some info about [ticket](idType)
 - what about my [ticket](idType)
-- [ticket](idType)s
+- [ticket](idType)
 - [ticket](idType) [462](iD) details
 - get [ticket](idType) [563](iD) information
 - i want some info about [365](iD) [ticket](idType)
@@ -60,6 +60,7 @@
 - I want the details of [customer](idType) with id [981](iD)
 - I want details for [customer](idType) id [645](iD)
 - Give me the [customer](idType) details of [832](iD)
+- that is about a [ticket](idType)
 
 ## intent:weather_details
 - get me the weather of [chennai](location)
@@ -74,20 +75,48 @@
 - temperature in [new jersey](location)
 - [delhi's](location) temperature
 - [chennai's](location) weather
+- weather in [toronto](location)
+- weather in [kingston](location)
+- what is the weather in [new south wales](location)
 - [washington dc](location) weather
+- [washington dc](location) temperature
+- [delhi](location) temperature
+- [chennai](location) weather
+- [new delhi's](location) temperature
+- [new delhi's](location) climate
+- [delhi's](location) climate
+- [chennai](location) climate
+- [washington dc](location) climate
+- [delhi](location) climate
+- [navi mumbai](location) climate
+- [new delhi's](location) climate
+- [new jersey's](location) weather
 - i want to know the weather details of weather in [paris](location)
-- i want to know the [barcelona's](location)weather details 
-- i need [new delhi's](location)temperature
+- i want to know the [barcelona's](location) weather details 
+- i need [vijayawada's](location) temperature
 - what is the temperature in [new delhi](location)
-- what is infoather in [washington dc](location)
+- what is weather in [washington dc](location)
 - what is [new york's](location) weather 
 - tell me [srinagar](location) temperature
 - tell me [kochi](location) temperature
 - tell me the temperature in [lucknow](location)
 - What is the weather report of [kolkata](location)
 - what about weather in [tanjore](location)
-- what is the temperature in [navi mumbai](location)
+- what is the temperature in [hyderabad](location)
 - weather in [london](location)
+- location is [chennai](location)
+- location is [new york](location)
+- [chennai](location) is the location 
+- [new york](location) is the location
+- in [chennai](location)
+- in [navi mumbai](location)
+- how's the climate
+- how is climate
+- how about temperature
+- how's weather
+- how about the weather
+- location is [new delhi](location)
+- location is [pune](location)
 
 ## intent:word_meaning
 - get me the meaning of [life](query)
@@ -95,22 +124,35 @@
 - meaning for [computer](query)
 - meaning for the word [rat](query)
 - what is the meaning of [keyboard](query)
-- find meaing for word [mountain](query)
+- find meaning for word [pencil box](query)
+- find meaning for word [mountain](query)
 - what is the meaning of [tumbling](query)?
 - meaning of [falling](query)
 - what is the meaning of [columns](query)
 - what is the meaning of [serenity](query)?
 - what does [tranquility](query) mean?
 - what is the meaning of [peacefullness](query)?
+- what does [organic chemistry](query) mean?
+- what is the meaning of [internal state](query)?
 - [pandemonium](query) means?
+- [ghost rider](query) meaning
+- [lemon spoon](query) meaning
 - [ghost](query) meaning
 - [lemon](query) meaning
 - [anxious](query) means
 - [bottle](query) word meaning
+- [bottle neck](query) word meaning
 - [ticket](query) meaning
 - meaning for word [dog](query)
 - meaning of [thank you](query)
 - what is the meaning of [come again](query)
+- meaning for [water](query)
+- meaning for [bottle](query)
+- I want to know meaning for [cloud computing](query).
+- meaning of [cloud computing](query).
+- meaning for [water bottle](query)
+- meaning for [eye balls](query)
+- meaning for [distilled water](query)
 
 ## intent:translate_data
 - [dog](word) in [tamil](language)
@@ -640,6 +682,8 @@
 - I want to marry you
 - you are my wife
 - be my husband
+- will you marry me?
+- any idea of marrying me?
 
 ## intent:smalltalk.agent.my_friend
 - I want to have a friend like you
@@ -690,6 +734,8 @@
 - your office location?
 - where is your office located?
 - what is your work?
+- place where you work?
+- your work place?
 
 ## intent:smalltalk.agent.origin
 - were you born here
@@ -712,6 +758,10 @@
 - are you ready tonight?
 - were you ready?
 - have you been ready?
+- ready?
+- ready now?
+- you ready?
+- being ready?
 
 ## intent:smalltalk.agent.real
 - you are real
@@ -820,6 +870,7 @@
 - are you still there
 - you are here?
 - you still there?
+- you there?
 - are you still here
 
 ## intent:smalltalk.appraisal.bad
@@ -1045,7 +1096,9 @@
 - great work
 - amazing work
 - bravo
+- fantastic
 - good work
+- zing zing amazing
 
 ## intent:smalltalk.dialog.hold_on
 - wait a second
@@ -1235,6 +1288,7 @@
 - happy evening 
 - good evening there buddy
 - have a good eveening
+- enjoy the evening
 
 ## intent:smalltalk.greetings.goodmorning
 - good morning
@@ -1345,6 +1399,7 @@
 - pleased to meet you
 - pleasure to meet you
 - pleasure to meet you too
+- happy to meet you
 
 ## intent:smalltalk.greetings.nice_to_see_you
 - it's nice to see you
@@ -1373,6 +1428,10 @@
 - nice talking to you
 - it is nice talking to you
 - how nice it is to talk to you
+- it was great chatting with you
+- nice to talk to you again 
+- It was nice speaking with you
+- It was great to talk to you
 
 ## intent:smalltalk.greetings.whatsup
 - what is on your mind?
@@ -1387,6 +1446,8 @@
 - then what's up
 - what's shaking
 - wassup
+- what are you doing?
+- what are you doing
 - what is going on
 - what is happening
 - what's cracking
@@ -1408,6 +1469,7 @@
 - I am pissed
 
 ## intent:smalltalk.user.back
+- boss in back
 - I am back
 - I'm here again
 - here I am again
@@ -1420,6 +1482,7 @@
 - I'm back again
 
 ## intent:smalltalk.user.bored
+- soo bored
 - that was boring
 - I'm bored
 - bored
@@ -1432,6 +1495,7 @@
 - i am very bored
 
 ## intent:smalltalk.user.busy
+- busy right now
 - I'm overloaded
 - I have no time
 - I'm busy
@@ -1444,7 +1508,7 @@
 - I'm super busy
 
 ## intent:smalltalk.user.can_not_sleep
-- I'm insomnious
+- I'm insomnia's
 - I'm sleepless
 - I can't get any sleep
 - I can't sleep
@@ -1467,6 +1531,7 @@
 - I don't want to talk to you
 - I don't like talking to you
 - Let's stop talking
+- I'm not in a mood to talk
 
 ## intent:smalltalk.user.excited
 - I am excited
@@ -1479,6 +1544,7 @@
 - I am thrilled to talk to you
 - I'm damn excited
 - I'm hyped
+- I'm very excited
 
 ## intent:smalltalk.user.going_to_bed
 - let's go to bed
@@ -1491,6 +1557,7 @@
 - it's bed time
 - going to bed now
 - gonna go to bed
+- time to sleep
 
 ## intent:smalltalk.user.good
 - I am good
@@ -1503,8 +1570,10 @@
 - I'm feeling great
 - I'm in a good mood
 - I'm doing really good
+- good
 
 ## intent:smalltalk.user.happy
+- Feeling happy
 - I am happy
 - I'm happy to see you
 - happy
@@ -1517,6 +1586,7 @@
 - I'm happy to talk to you
 
 ## intent:smalltalk.user.has_birthday
+- You know today it's my bday 
 - it is my birthday
 - I'm celebrating my birthday today
 - today is my birthday
@@ -1526,8 +1596,12 @@
 - i was born on this day
 - It's my born day
 - I want you to know that it's my birthday today
+- yaaaay it is my birthday
 
 ## intent:smalltalk.user.here
+- I'm here
+- here buddy
+- here dude
 - I am here
 - here I am
 - I'm right here
@@ -1548,6 +1622,7 @@
 - just kidding
 - kidding
 - I'm just playing with you
+- LOL 
 
 ## intent:smalltalk.user.likes_agent
 - I like you the way you are
@@ -1652,6 +1727,7 @@
 - what do you think I look like
 - am i good looking?
 - what do you think about my looks
+- Whom do i look like?
 
 ## intent:smalltalk.user.loves_agent
 - I love you
@@ -1664,6 +1740,7 @@
 - loving you
 - you know I love you
 - do you love me ?
+- Love you so much
 
 ## intent:smalltalk.user.misses_agent
 - I miss you
@@ -1673,6 +1750,10 @@
 - I miss you much
 - I missed you
 - I've missed you
+- miss you so much
+- miss you buddy
+- miss you badly
+- miss you :(
 
 ## intent:smalltalk.user.needs_advice
 - what should I do about it
@@ -1700,6 +1781,7 @@
 - what is your advice
 
 ## intent:smalltalk.user.sad
+- I'm in a sad mood
 - I am sad
 - I'm grieving
 - I am depressed
@@ -1709,6 +1791,7 @@
 - I'm having a bad day
 - I want to cry
 - I'm not happy
+- feeling sad
 
 ## intent:smalltalk.user.sleepy
 - I am sleepy
@@ -1720,6 +1803,7 @@
 - i will sleep anytime
 - i will doze off
 - I am too sleepy today
+- feeling too sleepy
 
 ## intent:smalltalk.user.testing_agent
 - test
@@ -1730,6 +1814,9 @@
 - let me test you
 - testing chatbot
 - testing
+- this is just a test
+- you are being tested
+- you're tested
 
 ## intent:smalltalk.user.tired
 - I'm drained
@@ -1740,6 +1827,9 @@
 - I'm worn out
 - I'm getting tired
 - I feel tired
+- I'm so tired
+- I'm completely drained out
+- I'm very tired 
 
 ## intent:smalltalk.user.waits
 - I'm waiting
@@ -1751,6 +1841,8 @@
 - I'm still waiting
 - I'm waiting for you
 - I'm waiting for a long time
+- I'll be waiting for you
+- I'll be waiting
 
 ## intent:smalltalk.user.wants_to_see_agent_again
 - I'd like to see you again
@@ -1762,6 +1854,9 @@
 - I will miss you 
 - let's meet soon
 - i think i'll miss you for sure
+- i'm missing you badly
+- i want to see you again soon
+- let's catch up soon
 
 ## intent:smalltalk.user.wants_to_talk
 - let's discuss something
@@ -1787,6 +1882,8 @@
 - I'll be right back
 - I'll come back
 - I shall be back
+- I assure that i will be back soon
+- I would be back man
 
 ## intent:smalltalk.confirmation.yes
 - yeah exactly
@@ -1799,6 +1896,13 @@
 - ya
 - ok yes
 - yes it is
+- yep
+- yew
+- yeah 
+- yeah fine
+- yea fine
+- yep okay
+- fine okay
 
 ## intent:smalltalk.confirmation.cancel
 - nevermind forget about it
@@ -1811,9 +1915,20 @@
 - cancel everything
 - cancel that one
 - i want to cancel
+- cancel it
+- cancelled
+- cancel it now
+- don't want cancel
+- cancel soon
+- shall stand cancelled
 
 ## intent:smalltalk.confirmation.no
 - don't
+- don't want
+- need not
+- don't come 
+- never help
+- never
 - not needed
 - of course not
 - never
@@ -1822,4 +1937,16 @@
 - absolutely no
 - no forget
 - do not
+- no thanks
+- no don't want
 - sorry no
+- don't want your help
+- I don't you help
+- I don't want your assistance
+- get out goodbye
+- i do not want your help
+- i don't need your help
+- i don't want your help
+- i am not okay with your help
+- don't want
+- do not
