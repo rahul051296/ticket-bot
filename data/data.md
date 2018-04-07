@@ -384,37 +384,36 @@
 - you're boring everyone
 
 ## intent:smalltalk.agent.boss
-- who is your boss
+- who is your boss?
 - who do you think is your boss
 - I should be your boss
 - who is your master
 - who is your owner
 - who is the boss
-- who do you work for
+- who do you work for?
 - who developed you?
 - who is your developer
-- i want to know more about your developer
 - who is your creator
 - who owns you
 - who is your trainer
 - who trained you?
 
 ## intent:smalltalk.agent.busy
-- are you busy
+- are you busy?
 - do you have a lot of things to do
-- have you got much to do
-- are you very busy
-- are you very busy right now
-- are you so busy
-- are you working
-- how busy you are
-- are you still working on it
+- have you got much to do?
+- are you very busy?
+- are you very busy right now?
+- are you so busy?
+- are you working?
+- how busy you are?
+- are you still working on it?
 - you're very busy
-- are you working now
-- are you working today
+- are you working now?
+- are you working today?
 - have you been busy
 - you are busy
-- are you still working
+- are you still working?
 - you seem to be busy
 - you seem to be very busy
 - you're a busy person
@@ -501,10 +500,10 @@
 - you know a lot of things
 - you have a lot of knowledge
 - you know so much
-- how smart you are
-- how brainy you are
+- how smart you are?
+- how brainy you are?
 - how clever you are
-- how brilliant you are
+- how brilliant you are?
 - you are intelligent
 - you are qualified
 - you are really smart
@@ -520,7 +519,7 @@
 - you're clever
 - you're pretty smart
 - you're qualified
-- why are you so smart
+- why are you so smart?
 - you are so clever
 
 ## intent:smalltalk.agent.crazy
@@ -631,25 +630,23 @@
 - you're very happy
 - you're really happy
 - you're so happy
-- how happy you are
+- how happy you are?
 - you're extremely happy
 - you're full of happiness
-- are you happy now
-- are you happy today
-- are you happy with me
+- are you happy now?
+- are you happy today?
+- are you happy with me?
 - i think you are happy
 - you seem to be happy
-- why do i feel you are happy
 - i feel i made you happy
 
 ## intent:smalltalk.agent.hobby
-- what do you do for fun
+- what do you do for fun?
 - what's your hobby
 - tell me about your hobby
 - do you have a hobby
 - what about your hobby
 - your hobby
-- what are your hobbies
 - what are your hobbies?
 - what do you do when you are bored
 - how do you spend your free time
@@ -740,14 +737,14 @@
 ## intent:smalltalk.agent.origin
 - were you born here
 - where were you born
-- what is your country
+- what is your country name?
 - where are you from
 - where do you come from
 - where did you come from
 - where have you been born
 - from where are you
 - are you from far aways
-- what's your homeland
+- what's your homeland?
 - your homeland is
 
 ## intent:smalltalk.agent.ready
@@ -772,8 +769,8 @@
 - I don't think you're fake
 - I suppose you're real
 - glad you're real
-- are you a real person
-- are you a real human
+- are you a real person?
+- are you a real human?
 - you are a real person
 - you are not real
 
@@ -783,9 +780,9 @@
 - your residence
 - your house
 - your home
-- your hometown
+- your hometown?
 - what is your hometown
-- is it your hometown
+- is this your hometown
 - where is your hometown
 - tell me about your city
 - what is your city
@@ -1276,6 +1273,7 @@
 - okay thank you bye
 - see you tomorrow
 - ok bye
+- byebye
 
 ## intent:smalltalk.greetings.goodevening
 - good evening
@@ -1350,21 +1348,20 @@
 - how is your morning so far
 - how are you getting on
 - how's your day going
-- how are you
+- how are you?
 - is everything all right
-- how are you doing
+- how are you doing?
 - how are the things going
 - are you alright
-- are you okay
+- are you okay?
 - how are you feeling
-- how are you going
+- how are you going?
 - is everything okay
-- how are you today
-- how do you do
-- how do you feel
-- how have you been
-- how is it
-- how is it going
+- how are you today?
+- how do you do?
+- how do you feel?
+- how have you been?
+- how is it going?
 - how is your day
 - how is your day going
 - how is your evening
@@ -1372,13 +1369,13 @@
 - are you having a good day
 - hope your day is going well
 - hope you re having a pleasant evening
-- how's life
+- how's life?
 - I'm fine and you
 - how is your life
 - how has your day been
 - how is your morning going
 - how has your day been going
-- how about you
+- how about you?
 - how is your day being
 - how is your day going on
 - how your day is going
@@ -1386,7 +1383,6 @@
 - what about your day
 - how's your day
 - how are you doing this morning
-- how is your day going
 
 ## intent:smalltalk.greetings.nice_to_meet_you
 - nice to meet you
@@ -1501,7 +1497,7 @@
 - I'm busy
 - I'm swamped
 - I got things to do
-- how busy I am
+- I am very busy right now
 - I got work to do
 - I'm working
 - I don't have time for this
