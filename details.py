@@ -14,7 +14,7 @@ def getTicketStatus(ticketId):
                 customerId = t.get('customerId')
                 assignedTo = t.get('assignedTo')
                 status = t.get('status')
-                response = 'These are the ticket details <br> <b>Customer Name:</b> {} <br><b>Customer Id:</b> {} <br><b>Priority:</b> {}<br><b> Assigned To:</b> {}<br><b> Status:</b> {}'.format(customerName, customerId, priorityName, assignedTo, status)
+                response = 'These are the ticket details <br> <b>Customer Name:</b> {}. <br><b>Customer ID:</b> {}. <br><b>Priority:</b> {}. <br><b> Assigned To:</b> {}. <br><b> Status:</b> {}.'.format(customerName, customerId, priorityName, assignedTo, status)
                 break
             else:
                 response = "None"
@@ -31,7 +31,7 @@ def getCustomerDetails(customerId):
                 phone = d.get('phone')
                 email = d.get('email')
                 address = d.get('address')
-                response = "These are the customer details <br><b>Name</b>: {}<br><b>Phone:</b> {}<br><b>Email:</b> {}<br><b>Address:</b> {}".format(name, phone, email, address)
+                response = "These are the customer details <br><b>Name</b>: {}. <br><b>Phone:</b> {}. <br><b>Email:</b> {}. <br><b>Address:</b> {}.".format(name, phone, email, address)
                 break
             else:
                 response = "None"

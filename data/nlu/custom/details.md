@@ -1,0 +1,63 @@
+## intent:details
+- can you help me finding details for id [621](iD)
+- i want to know about [order](idType) for [973](iD)
+- [customer](idType) information
+- information of [order](idType)
+- info regarding [ticket](idType)
+- give the details of [ticket](idType) with id [738](iD)
+- the number is [273](iD)
+- [ticket](idType) status
+- details of [ticket](idType)
+- what about [ticket](idType) with id [462](iD)
+- give the [ticket](idType) details
+- [ticket](idType) details pls
+- [327](iD)
+- give the details of the [ticket](idType) with id [332](iD)  
+- i want to know my [ticket](idType) details
+- details of [ticket](idType) with id [123](iD)
+- get the details following [ticket](idType) with id [126](iD)
+- [244](iD) [ticket](idType) details
+- can you give some details of [ticket](idType) [193](iD)
+- pls get the details of [ticket](idType)
+- [ticket](idType) id is [362](iD)
+- [298](iD) is my [ticket](idType) id
+- ok then what about [563](iD)
+- wanna some info about [ticket](idType)
+- what about my [ticket](idType)
+- [ticket](idType)
+- [ticket](idType) [462](iD) details
+- get [ticket](idType) [563](iD) information
+- i want some info about [365](iD) [ticket](idType)
+- [order](idType) details
+- get the [order](idType) details for id [574](iD)
+- details of my [order](idType)
+- what about [order](idType) with id [843](iD)
+- give the [order](idType) details
+- [order](idType) details pls
+- [832](iD)
+- give the details of the [order](idType) with id [483](iD)  
+- i want to know my [order](idType) details
+- details of [order](idType) with id [905](iD)
+- get the details following [order](idType) with id [735](iD)
+- [984](iD) [order](idType) details
+- can you give some details of [order](idType) [429](iD)
+- pls get the details of [order](idType)
+- [order](idType) id is [985](iD)
+- [913](iD) is my [order](idType) id
+- ok then what about [563](iD)
+- wanna some info about my [order](idType)
+- what about my [order](idType)
+- [order](idType)
+- [order](idType) [183](iD) details
+- get [order](idType) [127](iD) information
+- i want some info about [347](iD) [order](idType)
+- i need details of my [order](idType)
+- get me [customer](idType) details
+- i need information regarding a [customer](idType)
+- i need some info the [customer](idType)
+- Get me the [customer](idType) details of id [743](iD)
+- Get me the [customer](idType) details for id [283](iD)
+- I want the details of [customer](idType) with id [981](iD)
+- I want details for [customer](idType) id [645](iD)
+- Give me the [customer](idType) details of [832](iD)
+- that is about a [ticket](idType)

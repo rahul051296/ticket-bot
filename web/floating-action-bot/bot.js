@@ -38,9 +38,18 @@ function closechat() {
     fab.style.display = "block";
 }
 
+function start(msg){
+    let li = document.createElement('li');
+    li.appendChild(document.createTextNode(msg));
+    li.className = "sender"
+    ul.appendChild(li);
+    respond(msg)
+    chat.scrollTop = chat.scrollHeight;
+}
+
 function speak(msg) {
     var speech = new SpeechSynthesisUtterance(msg);
-    speech.voice = speechSynthesis.getVoices()[9];
+    speech.voice = speechSynthesis.getVoices()[5];
     window.speechSynthesis.speak(speech);
 }
 
