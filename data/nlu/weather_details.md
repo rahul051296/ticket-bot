@@ -53,3 +53,5 @@
 - how about the weather
 - location is [new delhi](location)
 - location is [pune](location)
+- what about [coimbatore](location)
+- weather in [chennai](location)
