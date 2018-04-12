@@ -55,3 +55,8 @@
 - location is [pune](location)
 - what about [coimbatore](location)
 - weather in [chennai](location)
+- what about [coimbatore](location)
+- what about [mumbai](location)
+- what about [seattle](location)
+
+- what about [seattle](location)

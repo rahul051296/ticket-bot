@@ -15,7 +15,7 @@ input.addEventListener("keyup", function (event) {
 });
 
 window.onload = function () {
-    fetch('http://localhost:8081/api/v1/status', {
+    fetch('http://10.149.93.224:8081/api/v1/status', {
         method: 'GET'
     })
         .then(function (response) {
@@ -71,7 +71,7 @@ function respond(msg) {
     data = {
         query: msg
     }
-    fetch(`http://localhost:8081/api/v1/${id}/respond`, {
+    fetch(`http://10.149.93.224:8081/api/v1/${id}/respond`, {
         method: 'POST',
         body: JSON.stringify(data)
     })
@@ -99,7 +99,7 @@ function respond(msg) {
                 li.appendChild(t)
                 ul.appendChild(li)
                 chat.scrollTop = chat.scrollHeight;
-                fetch(`http://localhost:8081/api/v1/${id}/respond`, {
+                fetch(`http://10.149.93.224:8081/api/v1/${id}/respond`, {
                     method: 'POST',
                     body: JSON.stringify({
                         query: "hi"

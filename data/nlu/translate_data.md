@@ -18,3 +18,5 @@
 - what is the translation of [worried](word) in [Tamil](language)?
 - what is the meaning of [cool](word) in [Spanish](language)?
 - what is [monster](word) in [hindi](language)?
+- translate [fast](word) to [tamil](language) for me please
+- i need the translation of [puppy](word) in [tamil](language) please

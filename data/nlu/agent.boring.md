@@ -14,3 +14,4 @@
 - you're boring everyone
 - I'm extremely bored because of you
 - Im bored of you
+- are you bored?

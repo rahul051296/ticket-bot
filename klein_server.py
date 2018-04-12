@@ -1,4 +1,5 @@
 import logging
+import multiprocessing
 
 from rasa_core.agent import Agent
 from rasa_core.channels.direct import CollectingOutputChannel
@@ -7,6 +8,7 @@ from rasa_core.interpreter import RasaNLUInterpreter
 from filter import intentStatus
 import yaml
 from flask import json
+from rasa_core.processor import MessageProcessor
 from klein import Klein
 
 logger = logging.getLogger(__name__)
@@ -65,33 +67,33 @@ def customFilter(query, parsedData, respondData):
         return respondData
 
 
-check = 0
-
-
-def lowConfidenceFilter(query, parsedData, respondData):
+def lowConfidenceFilter(query, sender_id, parsedData, respondData):
     global check, intentToAdd, dataToAdd
     intentName = parsedData.get('tracker').get('latest_message').get('intent').get('name')
     confidence = parsedData.get('tracker').get('latest_message').get('intent').get('confidence') * 100
     entities = parsedData.get('tracker').get('latest_message').get('entities')
-    if confidence < 20 or (intentName == "confirmation.yes" and check == 1) or (intentName == "confirmation.no" and check == 1):
-        if intentName == "confirmation.yes" and check == 1:
+    if confidence < 20 or (intentName == "confirmation.yes" and check == sender_id) or (
+            intentName == "confirmation.no" and check == sender_id):
+        if intentName == "confirmation.yes" and check == sender_id:
             check = 0
             intentStatus(dataToAdd, intentToAdd)
             return ["I will keep that in mind. Thank you for your response"]
-        elif intentName == "confirmation.no" and check == 1:
+        elif intentName == "confirmation.no" and check == sender_id:
             check = 0
             return ["I will let my developers know about it, thank you for your response"]
         else:
             if not respondData:
                 respondData.append("Sorry, I couldn't understand you, can you ask me in another way?")
             else:
+                entityList = []
+                for entity in entities:
+                    entityList.append({"entity": entity.get("entity"), "entityValue": entity.get("value")})
                 intentToAdd = intentName
-                dataToAdd = query
+                dataToAdd = {"text": query, "entities": entityList}
                 respondData.append("Did i give you the right response?")
-            check = 1
+            check = sender_id
             return respondData
     else:
-        check = 0
         if not respondData:
             respondData.append("Sorry, I couldn't understand you, can you ask me in another way?")
         return respondData
@@ -167,7 +169,6 @@ class FilterServer:
         request.setHeader('Content-Type', 'application/json')
         request.setHeader('Access-Control-Allow-Origin', '*')
         request_params = request_parameters(request)
-
         if 'query' in request_params:
             message = request_params.pop('query')
         elif 'q' in request_params:
@@ -181,7 +182,7 @@ class FilterServer:
             responseData = self.agent.handle_message(message,
                                                      output_channel=out,
                                                      sender_id=sender_id)
-            response = lowConfidenceFilter(message, parseData, responseData)
+            response = lowConfidenceFilter(message, sender_id, parseData, responseData)
             request.setResponseCode(200)
             return json.dumps(response)
         except Exception as e:
