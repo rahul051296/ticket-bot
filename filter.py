@@ -1,10 +1,10 @@
-def addData(nlu_dir, value):
+def add_data(nlu_dir, value):
         text = value.get('text')
         entities = value.get('entities')
-        textSplit = text.split()
+        text_split = text.split()
         for entity in entities:
-            textSplit = [txt.replace(entity.get('entityValue'), "[{}]({})".format(entity.get('entityValue'), entity.get('entity'))) for txt in textSplit]
-        value = " ".join(textSplit)
+            text_split = [txt.replace(entity.get('entity_value'), "[{}]({})".format(entity.get('entity_value'), entity.get('entity'))) for txt in text_split]
+        value = " ".join(text_split)
         with open(nlu_dir, "a+") as data:
             if data.write("\n- {}".format(value)):
                 print("Successfully added {} into {}".format(value, data.name))
@@ -12,9 +12,9 @@ def addData(nlu_dir, value):
                 print("Failed to add {} into {}".format(value, data.name))
 
 
-def intentStatus(message, intent):
-    addData(("./data/nlu/" + intent + ".md"), message)
+def intent_status(message, intent):
+    add_data(("./data/nlu/" + intent + ".md"), message)
 
 
 if __name__ == '__main__':
-    intentStatus({'text': 'what about coimbatore', 'entities': [{'entity': 'location', 'entityValue': 'coimbatore'}]}, "weather_details")
+    intent_status({'text': 'what about coimbatore', 'entities': [dict(entity='location', entity_value='coimbatore')]}, "weather_details")

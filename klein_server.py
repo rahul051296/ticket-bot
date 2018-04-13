@@ -4,7 +4,7 @@ from rasa_core.agent import Agent
 from rasa_core.channels.direct import CollectingOutputChannel
 from rasa_core.interpreter import RasaNLUInterpreter
 
-from filter import intentStatus
+from filter import intent_status
 import yaml
 from flask import json
 from klein import Klein
@@ -18,22 +18,22 @@ class Users:
     def __init__(self):
         self.users = []
 
-    def addUser(self, sender_id, status):
+    def add_user(self, sender_id, status):
         self.users.append(dict({"sender_id": sender_id, "status": status}))
 
-    def getUser(self, sender_id):
+    def get_user(self, sender_id):
         return [user for user in self.users if user['sender_id'] == sender_id]
 
-    def removeUser(self, sender_id):
+    def remove_user(self, sender_id):
         self.users = [user for user in self.users if user['sender_id'] != sender_id]
 
-    def updateStatus(self, sender_id, status):
+    def update_status(self, sender_id, status):
         for user in self.users:
             if user.get('sender_id') == sender_id:
                 user.update(dict({'sender_id': sender_id, 'status': status}))
 
 
-def readYAML():
+def read_yaml():
     global templates
     with open("domain.yml", 'r') as stream:
         try:
@@ -44,7 +44,7 @@ def readYAML():
     return templates
 
 
-def intentList(data):
+def intent_list(data):
     intent_array = []
     intents = []
     for d in data:
@@ -55,33 +55,33 @@ def intentList(data):
     return intent_array
 
 
-def customFilter(query, parsedData, respondData):
-    global checkIntent, confidenceScoreArray, lowConfidenceResponse, checkFirstRequest, queryToAdd, fileName
-    if checkFirstRequest == 0:
-        checkIntent = 0
-    checkFirstRequest = checkFirstRequest + 1
-    intentName = parsedData.get('tracker').get('latest_message').get('intent').get('name')
-    confidence = parsedData.get('tracker').get('latest_message').get('intent').get('confidence') * 100
-    if confidence < 20 or (intentName == "confirmation.no" and checkIntent == 1):
-        if checkIntent != 1:
-            data = parsedData.get('tracker').get('latest_message').get('intent_ranking')
-            confidenceScoreArray = intentList(data)
-            confidenceScoreArray = confidenceScoreArray[::-1]
-            queryToAdd = query
-        checkIntent = 1
-        lowConfidenceResponse = confidenceScoreArray.pop()
-        fileName = lowConfidenceResponse.get('name')
-        lowConfidenceResponse = [lowConfidenceResponse.get('utter'), "Did i give you the right response?"]
-        return lowConfidenceResponse
-    elif confidence < 20 or (intentName == "confirmation.yes" and checkIntent == 1):
-        intentStatus(queryToAdd, fileName)
-        confidenceScoreArray = []
-        checkIntent = 0
+def custom_filter(query, parsed_data, respond_data):
+    global check_intent, confidence_score_array, low_confidence_response, check_first_request, query_to_add, file_name
+    if check_first_request == 0:
+        check_intent = 0
+    check_first_request = check_first_request + 1
+    intent_name = parsed_data.get('tracker').get('latest_message').get('intent').get('name')
+    confidence = parsed_data.get('tracker').get('latest_message').get('intent').get('confidence') * 100
+    if confidence < 20 or (intent_name == "confirmation.no" and check_intent == 1):
+        if check_intent != 1:
+            data = parsed_data.get('tracker').get('latest_message').get('intent_ranking')
+            confidence_score_array = intent_list(data)
+            confidence_score_array = confidence_score_array[::-1]
+            query_to_add = query
+        check_intent = 1
+        low_confidence_response = confidence_score_array.pop()
+        file_name = low_confidence_response.get('name')
+        low_confidence_response = [low_confidence_response.get('utter'), "Did i give you the right response?"]
+        return low_confidence_response
+    elif confidence < 20 or (intent_name == "confirmation.yes" and check_intent == 1):
+        intent_status(query_to_add, file_name)
+        confidence_score_array = []
+        check_intent = 0
         msg = ["I will keep that in mind"]
         return msg
     else:
-        checkIntent = 0
-        return respondData
+        check_intent = 0
+        return respond_data
 
 
 check = 0
@@ -89,48 +89,45 @@ check = 0
 users = Users()
 
 
-def lowConfidenceFilter(query, sender_id, parsedData, respondData):
-    global check, intentToAdd, dataToAdd
-    intentName = parsedData.get('tracker').get('latest_message').get('intent').get('name')
-    confidence = parsedData.get('tracker').get('latest_message').get('intent').get('confidence') * 100
-    entities = parsedData.get('tracker').get('latest_message').get('entities')
+def low_confidence_filter(query, sender_id, parsed_data, respond_data):
+    global check, intent_to_add, data_to_add
+    intent_name = parsed_data.get('tracker').get('latest_message').get('intent').get('name')
+    confidence = parsed_data.get('tracker').get('latest_message').get('intent').get('confidence') * 100
+    entities = parsed_data.get('tracker').get('latest_message').get('entities')
     try:
-        status = users.getUser(sender_id)[0].get('status')
+        status = users.get_user(sender_id)[0].get('status')
     except IndexError:
-        users.addUser(sender_id, 0)
+        users.add_user(sender_id, 0)
         status = 0
-    if confidence < 20 or (intentName == "confirmation.yes" and status == 1) or (intentName == "confirmation.no" and status == 1):
+    if confidence < 20 or (intent_name == "confirmation.yes" and status == 1) or (
+            intent_name == "confirmation.no" and status == 1):
 
-        if intentName == "confirmation.yes" and status == 1:
-            # check = 0
-            users.removeUser(sender_id)
-            intentStatus(dataToAdd, intentToAdd)
+        if intent_name == "confirmation.yes" and status == 1:
+            users.remove_user(sender_id)
+            intent_status(data_to_add, intent_to_add)
             return ["I will keep that in mind. Thank you for your response"]
-        elif intentName == "confirmation.no" and status == 1:
-            # check = 0
-            users.removeUser(sender_id)
+        elif intent_name == "confirmation.no" and status == 1:
+            users.remove_user(sender_id)
             return ["I will let my developers know about it, thank you for your response"]
         else:
-            if not respondData:
-                respondData.append("Sorry, I couldn't understand you, can you ask me in another way?")
+            if not respond_data:
+                respond_data.append("Sorry, I couldn't understand you, can you ask me in another way?")
             else:
-                entityList = []
+                entity_list = []
                 if entities:
                     for entity in entities:
-                        entityList.append({"entity": entity.get("entity"), "entityValue": entity.get("value")})
-                intentToAdd = intentName
-                dataToAdd = {"text": query, "entities": entityList}
-                respondData.append("Did i give you the right response?")
-            # check = sender_id
-            users.updateStatus(sender_id, 1)
-            return respondData
+                        entity_list.append({"entity": entity.get("entity"), "entity_value": entity.get("value")})
+                intent_to_add = intent_name
+                data_to_add = {"text": query, "entities": entity_list}
+                respond_data.append("Did i give you the right response?")
+            users.update_status(sender_id, 1)
+            return respond_data
     else:
         if status == 1:
-            # check = 0
-            users.removeUser(sender_id)
-        if not respondData:
-            respondData.append("Sorry, I couldn't understand you, can you ask me in another way?")
-        return respondData
+            users.remove_user(sender_id)
+        if not respond_data:
+            respond_data.append("Sorry, I couldn't understand you, can you ask me in another way?")
+        return respond_data
 
 
 def request_parameters(request):
@@ -211,12 +208,10 @@ class FilterServer:
             request.setResponseCode(400)
             return json.dumps({"error": "Invalid parse parameter specified"})
         try:
-            parseData = self.agent.start_message_handling(message, sender_id)
+            parse_data = self.agent.start_message_handling(message, sender_id)
             out = CollectingOutputChannel()
-            responseData = self.agent.handle_message(message,
-                                                     output_channel=out,
-                                                     sender_id=sender_id)
-            response = lowConfidenceFilter(message, sender_id, parseData, responseData)
+            response_data = self.agent.handle_message(message, output_channel=out, sender_id=sender_id)
+            response = low_confidence_filter(message, sender_id, parse_data, response_data)
             request.setResponseCode(200)
             return json.dumps(response)
         except Exception as e:
@@ -227,8 +222,8 @@ class FilterServer:
 
 
 if __name__ == "__main__":
-    readYAML()
-    filterObject = FilterServer("models/dialogue/default/dialogue_model", RasaNLUInterpreter("models/nlu/default"
-                                                                                             "/nlu_model"))
+    read_yaml()
+    filter_object = FilterServer("models/dialogue/default/dialogue_model", RasaNLUInterpreter("models/nlu/default"
+                                                                                              "/nlu_model"))
     logger.info("Started http server on port %s" % 8081)
-    filterObject.app.run("0.0.0.0", 8081)
+    filter_object.app.run("0.0.0.0", 8081)

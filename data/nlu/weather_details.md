@@ -60,4 +60,3 @@
 - what about [seattle](location)
 - what about [mumbai](location)'
 - what about [kingston](location)
-- what about [kingston](location)
