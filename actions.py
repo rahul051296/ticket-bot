@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 
-from soup import searchWeatherDetails, searchWordMeaning, translateGoogle
+from soup import searchWeatherDetails, searchWordMeaning, translateGoogle, searchRestaurants
 from details import getTicketStatus, getCustomerDetails, getOrderDetails
 
 
@@ -92,3 +92,15 @@ class GetTranslation(Action):
             message = translateGoogle(word, language)
             dispatcher.utter_message(message)
             return [SlotSet('language', None)]
+
+
+class GetRestaurant(Action):
+    def name(self):
+        return 'utter_restaurant_details'
+
+    def run(self, dispatcher, tracker, domain):
+        area = str(tracker.get_slot('area'))
+        cuisine = str(tracker.get_slot('cuisine'))
+        response = searchRestaurants(area, cuisine)
+        dispatcher.utter_message(response)
+        return [SlotSet('area', None)]

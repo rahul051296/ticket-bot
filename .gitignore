@@ -1,6 +1,7 @@
 __pycache__
 .idea
 .vscode
+.vs
 tickets.json
 orders.json
 models/
