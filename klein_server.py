@@ -1,5 +1,4 @@
 import logging
-import multiprocessing
 
 from rasa_core.agent import Agent
 from rasa_core.channels.direct import CollectingOutputChannel
@@ -8,12 +7,30 @@ from rasa_core.interpreter import RasaNLUInterpreter
 from filter import intentStatus
 import yaml
 from flask import json
-from rasa_core.processor import MessageProcessor
 from klein import Klein
 
 logger = logging.getLogger(__name__)
 
 checkFirstRequest = 0
+
+
+class Users:
+    def __init__(self):
+        self.users = []
+
+    def addUser(self, sender_id, status):
+        self.users.append(dict({"sender_id": sender_id, "status": status}))
+
+    def getUser(self, sender_id):
+        return [user for user in self.users if user['sender_id'] == sender_id]
+
+    def removeUser(self, sender_id):
+        self.users = [user for user in self.users if user['sender_id'] != sender_id]
+
+    def updateStatus(self, sender_id, status):
+        for user in self.users:
+            if user.get('sender_id') == sender_id:
+                user.update(dict({'sender_id': sender_id, 'status': status}))
 
 
 def readYAML():
@@ -67,33 +84,50 @@ def customFilter(query, parsedData, respondData):
         return respondData
 
 
+check = 0
+
+users = Users()
+
+
 def lowConfidenceFilter(query, sender_id, parsedData, respondData):
     global check, intentToAdd, dataToAdd
     intentName = parsedData.get('tracker').get('latest_message').get('intent').get('name')
     confidence = parsedData.get('tracker').get('latest_message').get('intent').get('confidence') * 100
     entities = parsedData.get('tracker').get('latest_message').get('entities')
-    if confidence < 20 or (intentName == "confirmation.yes" and check == sender_id) or (
-            intentName == "confirmation.no" and check == sender_id):
-        if intentName == "confirmation.yes" and check == sender_id:
-            check = 0
+    try:
+        status = users.getUser(sender_id)[0].get('status')
+    except IndexError:
+        users.addUser(sender_id, 0)
+        status = 0
+    if confidence < 20 or (intentName == "confirmation.yes" and status == 1) or (intentName == "confirmation.no" and status == 1):
+
+        if intentName == "confirmation.yes" and status == 1:
+            # check = 0
+            users.removeUser(sender_id)
             intentStatus(dataToAdd, intentToAdd)
             return ["I will keep that in mind. Thank you for your response"]
-        elif intentName == "confirmation.no" and check == sender_id:
-            check = 0
+        elif intentName == "confirmation.no" and status == 1:
+            # check = 0
+            users.removeUser(sender_id)
             return ["I will let my developers know about it, thank you for your response"]
         else:
             if not respondData:
                 respondData.append("Sorry, I couldn't understand you, can you ask me in another way?")
             else:
                 entityList = []
-                for entity in entities:
-                    entityList.append({"entity": entity.get("entity"), "entityValue": entity.get("value")})
+                if entities:
+                    for entity in entities:
+                        entityList.append({"entity": entity.get("entity"), "entityValue": entity.get("value")})
                 intentToAdd = intentName
                 dataToAdd = {"text": query, "entities": entityList}
                 respondData.append("Did i give you the right response?")
-            check = sender_id
+            # check = sender_id
+            users.updateStatus(sender_id, 1)
             return respondData
     else:
+        if status == 1:
+            # check = 0
+            users.removeUser(sender_id)
         if not respondData:
             respondData.append("Sorry, I couldn't understand you, can you ask me in another way?")
         return respondData

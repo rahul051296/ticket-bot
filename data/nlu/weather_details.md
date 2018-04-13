@@ -58,5 +58,6 @@
 - what about [coimbatore](location)
 - what about [mumbai](location)
 - what about [seattle](location)
-
-- what about [seattle](location)
+- what about [mumbai](location)'
+- what about [kingston](location)
+- what about [kingston](location)

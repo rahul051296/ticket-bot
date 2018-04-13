@@ -63,7 +63,7 @@ function send() {
         respond(msg);
         document.getElementById('chat-input').value = "";
         chat.scrollTop = chat.scrollHeight;
-        document.getElementById('typing').style.display = "block";
+        document.getElementById('typing').style.display = "inline";
     }
 }
 
